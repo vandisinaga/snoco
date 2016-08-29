@@ -12,8 +12,8 @@ header{
         }
       }
       .search-form-container{
-        -webkit-box-shadow: 8px 6px 26px -5px #756868;
-        box-shadow: 8px 6px 26px -5px #756868;
+        -webkit-box-shadow: 7px 6px 22px -4px #a29292;
+        box-shadow: 7px 6px 22px -4px #a29292;
         form{
           input{
             -webkit-border-radius: 0;
@@ -49,64 +49,106 @@ header{
       }
       .navbar-header{
         .navbar-toggle{
-
+          .icon-bar{
+            background-color: $color-green;
+          }
+        }
+        .brand{
+          img{
+            padding:0;
+            margin-bottom: 15px;
+          }
         }
         #navbar-main-menu{
           .menu-main-menu-container{
             #menu-main-menu{
-              li{
-                display: inline-block;
-                &.menu-item-has-children{
-                  >a{
-                    &::after{
-                      content: '\f0d7';
-                      font-family: FontAwesome;
-                      margin-left: 5px;
-                      font-size: 13px;
-                      vertical-align: text-bottom;
+              @media (max-width: $screen-xs-max){
+                li{
+                  a{
+                    border-bottom: solid thin $color-green;
+                    @include font-size(1.2);
+                  }
+                  .sub-menu{
+                    list-style: none;
+                    padding: 0;
+                    a{
+                      padding-left: 20px;
+                      display: block;
                     }
                   }
                 }
-                &:hover{
-                  .sub-menu{
-                    display: block;
+              }
+              @media (min-width: $screen-sm-min){
+                li{
+                  display: inline-block;
+                  &:hover,
+                  &:focus{
+                    >a{
+                      color: $color-white;
+                      background-color: $color-green;
+                      &::after{
+                        color: $color-white;
+                      }
+                    }
                   }
-                }
-                .sub-menu{
-                  border-right: 2px solid #49b448;
-                  min-width: 210px;
-                  display: none;
-                  position: absolute;
-                  background: white;
-                  z-index: 5;
-                  left: 0;
-                  padding: 0;
-                  list-style: none;
-                  li{
-                    display: block;
-                    a{
-                      font-family: $Gotham-Medium-Regular;
-                      color: #000000;
-                      padding: 10px;
+                  &.menu-item-has-children{
+                    >a{
+                      &::after{
+                        content: '\f0d7';
+                        font-family: FontAwesome;
+                        margin-left: 5px;
+                        font-size: 13px;
+                        vertical-align: text-bottom;
+                      }
+                    }
+                  }
+                  &:hover{
+                    .sub-menu{
                       display: block;
-                      border-top: 1px solid #c4bfc3;
-                      font-size: 13px;
-                      text-transform: capitalize;
+                    }
+                  }
+                  .sub-menu{
+                    padding:0;
+                    border-right: 2px solid #49b448;
+                    min-width: 210px;
+                    display: none;
+                    position: absolute;
+                    background: white;
+                    z-index: 5;
+                    left: 0;
+                    list-style: none;
+                    li{
+                      display: block;
                       &:hover,
                       &:focus{
-                        text-decoration: none;
+                        a{
+                          background: $color-light-grey;
+                        }
+                      }
+                      a{
+                        font-family: $Gotham-Medium-Regular;
+                        color: #000000;
+                        padding: 10px;
+                        display: block;
+                        border-bottom: none;
+                        font-size: 13px;
+                        text-transform: capitalize;
+                        &:hover,
+                        &:focus{
+                          text-decoration: none;
+                        }
                       }
                     }
                   }
                 }
-                a{
-                  text-transform: uppercase;
-                  font-family: $Gotham-Medium-Regular;
-                  font-size: 17.08px;
-                  padding: 10px 5.8px;
-                  @media (min-width: $screen-md-min){
-                    padding: 10px 15px;
-                  }
+              }
+              a{
+                text-transform: uppercase;
+                font-family: $Gotham-Medium-Regular;
+                font-size: 17.08px;
+                padding: 10px 5.8px;
+                @media (min-width: $screen-md-min){
+                  padding: 12px 15px;
                 }
               }
             }

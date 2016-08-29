@@ -13,9 +13,11 @@ $font-size-base : 14px;
 
 
 // Colors
+$color-white:                       #ffffff;
+$color-light-grey:                  #f1f1f1;
 $color-green:                       #97c83e;
 $color-dark-green:                  #54b753;
-$color-light-green-opacity:         rgba(234, 239, 213,0.5);
+$color-light-green-opacity:         rgba(234, 239, 213,0.7);
 //Font
 
 @mixin font-face($font-family, $font-url, $font-name) {
@@ -33,12 +35,14 @@ $color-light-green-opacity:         rgba(234, 239, 213,0.5);
 @include font-face("gotham-bold", '../fonts','gotham-bold');
 @include font-face("MuseoSans2", '../fonts','MuseoSans2');
 @include font-face("Langdon", '../fonts','Langdon');
+@include font-face("Lulo-Clean-Outline-Bold", '../fonts','Lulo-Clean-Outline-Bold');
 
 $open-sans : 'Open Sans', sans-serif;
 $Gotham-Medium-Regular : "Gotham-Medium-Regular", Helvetica, Arial, sans-serif;
 $gotham-bold : "Gotham-Medium-Regular", Helvetica, Arial, sans-serif;
 $MuseoSans2 : "MuseoSans2", Helvetica, Arial, sans-serif;
 $Langdon : "Langdon", Helvetica, Arial, sans-serif;
+$Lulo-Clean-Outline-Bold : "Lulo-Clean-Outline-Bold", Helvetica, Arial, sans-serif;
 
 @mixin font-size($sizeValue: 1.0) {
   font-size: ($sizeValue * $font-size-base);
