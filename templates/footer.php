@@ -1,7 +1,6 @@
 <footer class="">
   <div class="footer-bottom-outer">
     <div class="container">
-      <div class="row">
         <div class="footer-container">
           <div class="footer-title">
             <h1 class="title">
@@ -22,7 +21,6 @@
             <?php endif; ?>
           </div>
         </div>
-      </div>
     </div>
   </div>
 
