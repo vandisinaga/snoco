@@ -16,6 +16,7 @@ $font-size-base : 14px;
 $color-white:                       #ffffff;
 $color-light-grey:                  #f1f1f1;
 $color-green:                       #97c83e;
+$color-light-green:                       #51d250;
 $color-dark-green:                  #54b753;
 $color-light-green-opacity:         rgba(234, 239, 213,0.7);
 //Font
@@ -36,7 +37,9 @@ $color-light-green-opacity:         rgba(234, 239, 213,0.7);
 @include font-face("MuseoSans2", '../fonts','MuseoSans2');
 @include font-face("Langdon", '../fonts','Langdon');
 @include font-face("Lulo-Clean-Outline-Bold", '../fonts','Lulo-Clean-Outline-Bold');
+@include font-face("proximanova-regular", '../fonts','proximanova-regular');
 
+$proximanova-regular : 'proximanova-regular', sans-serif;
 $open-sans : 'Open Sans', sans-serif;
 $Gotham-Medium-Regular : "Gotham-Medium-Regular", Helvetica, Arial, sans-serif;
 $gotham-bold : "Gotham-Medium-Regular", Helvetica, Arial, sans-serif;

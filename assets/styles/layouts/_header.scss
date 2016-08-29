@@ -33,7 +33,7 @@ header{
             letter-spacing: 1px;
             font-family: $Gotham-Medium-Regular;
             &:hover{
-
+              background-color: $color-light-green;
             }
           }
         }
@@ -60,6 +60,7 @@ header{
           }
         }
         #navbar-main-menu{
+          padding: 0;
           .menu-main-menu-container{
             #menu-main-menu{
               @media (max-width: $screen-xs-max){
@@ -74,6 +75,7 @@ header{
                     a{
                       padding-left: 20px;
                       display: block;
+                      font-family: $proximanova-regular;
                     }
                   }
                 }
@@ -85,7 +87,7 @@ header{
                   &:focus{
                     >a{
                       color: $color-white;
-                      background-color: $color-green;
+                      background-color: $color-light-green;
                       &::after{
                         color: $color-white;
                       }
@@ -126,12 +128,12 @@ header{
                         }
                       }
                       a{
-                        font-family: $Gotham-Medium-Regular;
+                        font-family: $proximanova-regular;
                         color: #000000;
                         padding: 10px;
                         display: block;
-                        border-bottom: none;
-                        font-size: 13px;
+                        border-bottom: solid thin #d8d8d8;
+                        font-size: 14px;
                         text-transform: capitalize;
                         &:hover,
                         &:focus{
@@ -144,7 +146,6 @@ header{
               }
               a{
                 text-transform: uppercase;
-                font-family: $Gotham-Medium-Regular;
                 font-size: 17.08px;
                 padding: 10px 5.8px;
                 @media (min-width: $screen-md-min){
