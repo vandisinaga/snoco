@@ -116,8 +116,8 @@ if( function_exists('acf_add_options_page') ) {
         'redirect' => false
     ));
     acf_add_options_sub_page(array(
-        'page_title' => 'home Settings',
-        'menu_title' => 'home Settings',
+        'page_title' => 'Home Page Header',
+        'menu_title' => 'Home Page Header',
         'parent_slug' => 'theme-general-settings',
     ));
     acf_add_options_sub_page(array(

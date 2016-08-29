@@ -1,10 +1,10 @@
-<footer class="content-info">
+<footer class="">
   <div class="footer-bottom-outer">
     <div class="container">
       <div class="row">
         <div class="footer-container">
           <div class="footer-title">
-            <h1 class="text-center title">
+            <h1 class="title">
               <?php
               $footer_title = get_field('footer_title', 'option');
               ?>

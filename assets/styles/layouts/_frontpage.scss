@@ -1,0 +1,125 @@
+.home{
+    .home-page-background{
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 464px;
+        overflow: hidden;
+        .home-page-background-caption{
+            top: 50%;
+            transform: translateY(8%);
+            h1{
+                @media (min-width: $screen-sm-min){
+                    font-size: 7rem;
+                }
+                font-family: $gotham-bold;
+                font-weight: 700;
+                font-size: 4rem;
+                text-transform: uppercase;
+                text-shadow: 0 0 0 #fff,-1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,1px 1px 0 #fff;
+            }
+            h3{
+                text-transform: uppercase;
+                font-family: Gotham-Medium-Regular,Helvetica,Arial,sans-serif;
+                font-weight: 700;
+                line-height: 1.6;
+                font-size: 3.3rem;
+                color: #fff;
+                letter-spacing: 5px;
+            }
+        }
+    }
+
+    .initiative-buttons-ounter-container{
+        padding: 20px 0;
+        .initiative-buttons-box{
+            .initiative-buttons-content{
+                margin: 12px 0px;
+                min-height: 281px;
+                .initiative_buttons_title{
+                    text-transform: uppercase;
+                    margin: 0;
+                    text-align: center;
+                    color: white;
+                    @include font-size(4);
+                    padding: 10px;
+                    background: #00b1f0;
+                    font-family: $Langdon;
+                }
+                .initiative-buttons-content-inner{
+                    position: relative;
+                    min-height: 212px;
+                    img{
+                        padding-top: 25px;
+                    }
+                    .initiative-button{
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        -webkit-border-radius: 100%;
+                        -moz-border-radius: 100%;
+                        border-radius: 100%;
+                        background: #00b1f0;
+                        a{
+                            &.btn-initiative{
+                                i{
+                                    font-weight: bold;
+                                    color: white;
+                                    line-height: inherit;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(2){
+                .initiative-buttons-content{
+                    margin: 12px 25px;
+                    @media (max-width: $screen-xs-max){
+                        margin: 12px 0px;
+                    }
+                    .initiative_buttons_title{
+                        background: #4d738a;
+                    }
+                    .initiative-buttons-content-inner{
+                        .initiative-button{
+                            background: #4d738a;
+                        }
+                    }
+                }
+            }
+            &:nth-child(3){
+                .initiative_buttons_title{
+                    background: #f7903c;
+                }
+                .initiative-buttons-content-inner{
+                    .initiative-button{
+                        background: #f7903c;
+                    }
+                }
+            }
+        }
+    }
+
+    .about-outer-container{
+        padding: 30px 0;
+        margin-bottom: 30px;
+        .about-container{
+            background: $color-light-green-opacity;
+            padding: 20px 40px;
+            font-size: 18px;
+            line-height: 1.6;
+            h1{
+                color: $color-dark-green;
+                text-transform: uppercase;
+                font-family: $Gotham-Medium-Regular;
+                margin-bottom: 20px;
+                font-size: 3.7rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+        }
+    }
+}

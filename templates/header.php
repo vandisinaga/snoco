@@ -3,29 +3,38 @@
   <div class="header-top-outer hidden-xs">
     <div class="container-fluid">
       <div class="header-top-container">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <div class="row">
-            <div class="header-logo">
-
-              <a class="brand" href="<?php echo esc_url(home_url('/')); ?>">
-                <?php
-                $logo = get_field('logo_image', 'option');
-                if(strlen($logo['url'])):
-                  ?>
-                  <img src="<?php echo $logo['url'] ?>" alt="<?php bloginfo('name'); ?>" class="navbar-brand"/>
-                <?php else: ?>
-                  <?php bloginfo('name'); ?>
-                <?php endif; ?>
-              </a>
+        <div class="container">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="row">
+              <div class="header-logo">
+                <a class="brand" href="<?php echo esc_url(home_url('/')); ?>">
+                  <?php
+                  $logo = get_field('logo_image', 'option');
+                  if(strlen($logo['url'])):
+                    ?>
+                    <img src="<?php echo $logo['url'] ?>" alt="<?php bloginfo('name'); ?>" class="navbar-brand"/>
+                  <?php else: ?>
+                    <?php bloginfo('name'); ?>
+                  <?php endif; ?>
+                </a>
+              </div>
             </div>
           </div>
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <div class="row">
+              <div class="search-form-container pull-right">
+                <?php get_search_form(); ?>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
         </div>
       </div>
     </div>
   </div>
 
   <div class="header-bottom-outer">
-    <div class="container-fluid">
+    <div class="container">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="row">
 
