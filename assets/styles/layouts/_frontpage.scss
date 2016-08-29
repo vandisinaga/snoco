@@ -11,7 +11,7 @@
         .home-page-background-caption{
             top: 50%;
             transform: translateY(8%);
-            padding: 2% 5%;
+            padding: 0% 5%;
             h1{
                 @media (min-width: $screen-sm-min){
                     @include font-size(5.5);
