@@ -21,6 +21,10 @@
                 margin-top: 10px;
                 @include font-size(3.7);
             }
+            a{
+                font-family: $open-sans;
+                color: $color-grey2;
+            }
         }
     }
 }

@@ -3,6 +3,7 @@ body{
 }
 p{
   @include font-size(1.8);
+  color: $color-grey2;
 }
 a{
   color: $color-dark-green;
