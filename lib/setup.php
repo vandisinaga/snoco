@@ -87,6 +87,8 @@ function display_sidebar() {
     is_front_page(),
     is_page_template('template-custom.php'),
     is_page_template('template-about.php'),
+    is_page_template('template-initiatives.php'),
+    is_page_template('template-gugo.php'),
 
   ]);
 
