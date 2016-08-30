@@ -1,7 +1,9 @@
 body{
   font-family: $open-sans;
 }
-
+p{
+  @include font-size(1.8);
+}
 a{
   color: $color-dark-green;
   font-family: $Gotham-Medium-Regular;
@@ -12,3 +14,9 @@ a{
     width: 936px;
   }
 }
+
+.sub-title{
+  margin: 15px 0 30px;
+ }
+
+
