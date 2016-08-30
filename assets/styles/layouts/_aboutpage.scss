@@ -1,0 +1,30 @@
+.about-committee-members{
+  color: $color-grey3;
+  padding-right: 0;
+
+  .committee-member-image{
+
+  }
+  .committee-member-name{
+    text-align: center;
+  }
+  .committee-member-job-title{
+    text-align: center;
+  }
+  .committee-member-company{
+    text-align: center;
+  }
+
+  &:nth-child(3){
+    padding-left: 45px;
+  }
+  &:nth-child(4){
+    padding-left: 85px;
+  }
+  &:nth-child(7){
+    padding-left: 45px;
+  }
+  &:nth-child(8){
+    padding-left: 85px;
+  }
+}

@@ -29,17 +29,17 @@ use Roots\Sage\Wrapper;
     <div class="wrap container" role="document">
       <div class="content row">
           <div class="content-outer">
-              <!--        <main class="main">-->
+                      <main class="main">
               <?php include Wrapper\template_path(); ?>
-              <!--        </main><!-- /.main -->
-              <!--        --><?php //if (Setup\display_sidebar()) : ?>
-              <!--          <aside class="sidebar">-->
-              <!--            --><?php //include Wrapper\sidebar_path(); ?>
-              <!--          </aside><!-- /.sidebar -->
-              <!--        --><?php //endif; ?>
+                     </main>
+              <?php if (Setup\display_sidebar()) : ?>
+              <aside class="sidebar">
+              <?php include Wrapper\sidebar_path(); ?>
+              </aside>
+             <?php endif; ?>
           </div>
-      </div><!-- /.content -->
-    </div><!-- /.wrap -->
+      </div>
+    </div>
 
     <?php endif ?>
 
