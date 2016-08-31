@@ -6,7 +6,7 @@ header{
         a{
           .navbar-brand{
             padding: 0;
-            margin-left: 1px;
+            margin-left: -10px;
             height: auto;
             @media (max-width: $screen-sm-max){
               width: 100%;
@@ -17,6 +17,7 @@ header{
       .search-form-container{
         -webkit-box-shadow: 7px 6px 22px -4px #a29292;
         box-shadow: 7px 6px 22px -4px #a29292;
+        margin-right: -11px;
         form{
           input{
             -webkit-border-radius: 0;
@@ -86,6 +87,7 @@ header{
                 }
               }
               @media (min-width: $screen-sm-min){
+                margin-right: -24px;
                 li{
                   display: inline-block;
                   &:hover,
@@ -151,10 +153,10 @@ header{
               }
               a{
                 text-transform: uppercase;
-                font-size: 18.08px;
+                font-size: 19.86px;
                 padding: 10px 5.8px;
                 @media (min-width: $screen-md-min){
-                  padding: 12px 15px;
+                  padding: 12px;
                 }
               }
             }

@@ -63,13 +63,13 @@ $steering_committee_content = get_field('steering_committee_content');
         </div>
       </div>
     <?php if($i++ == 2): ?>
-    <div class="clearfix"></div>
+      <div class="clearfix"></div>
     <?php endif ?>
 <?php endforeach; ?>
     <div class="clearfix"></div>
 </div>
 <?php endif; ?>
 
-<?php get_template_part('templates/initiative-button'); ?>
+
 
 

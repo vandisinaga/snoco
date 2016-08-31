@@ -1,11 +1,6 @@
 <?php
 $banner = get_field('initiative_buttons', 'option');
 ?>
-
-<div class="container">
-    <?php get_template_part('templates/initiative-button'); ?>
-</div>
-
 <!--<div class="initiative-buttons-ounter-container">-->
 <!--    <div class="container">-->
 <!--        --><?php //if($banner): ?>
@@ -46,7 +41,7 @@ $banner = get_field('initiative_buttons', 'option');
 <!--        <div class="clearfix"></div>-->
 <!--    </div>-->
 <!--</div>-->
-
+<?php get_template_part('templates/initiative-button'); ?>
 <?php
 $style = '';
 $about_section_background = get_field('about_section_background', 'option');

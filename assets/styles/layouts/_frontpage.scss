@@ -1,19 +1,31 @@
 .home{
     .initiative-buttons-ounter-container {
         padding: 20px 0;
-        .initiative-buttons-box {
-            margin-bottom: 15px;
-            .initiative-buttons-content {
-                margin: 0 22px 0 0px;
-            }
-            &:nth-child(2){
-                .initiative-buttons-content{
-                    margin: 0 49px 0 15px;
+        .initiative-buttons-inner-container{
+            padding-left:7px;
+            .initiative-buttons-box {
+                margin-bottom: 15px;
+                .initiative-buttons-content {
+                    margin: 0 11% 0 -5%;
+                    @media (max-width: $screen-xs-max){
+                        margin: 12px 0px;
+                    }
                 }
-            }
-            &:nth-child(3){
-                .initiative-buttons-content{
-                    margin: 0 -17px 0 -4px;
+                &:nth-child(2){
+                    .initiative-buttons-content{
+                        margin: 0 14.5% 0 1%;
+                        @media (max-width: $screen-xs-max){
+                            margin: 12px 0px;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    .initiative-buttons-content{
+                        margin: 0 -6% 0 -6%;
+                        @media (max-width: $screen-xs-max){
+                            margin: 12px 0px;
+                        }
+                    }
                 }
             }
         }
@@ -26,8 +38,8 @@
         background-size: cover;
         .about-container{
             background: $color-light-green-opacity;
-            padding: 20px 40px;
-            margin: 0px 30px;
+            padding: 20px 30px;
+            margin: 0 18px;
             line-height: 1.6;
             min-height: 299px;
             @media (max-width: $screen-xs-max){
