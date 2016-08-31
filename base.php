@@ -18,20 +18,20 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
     ?>
-    <?php get_template_part('templates/page-background'); ?>
 
     <?php if(is_front_page()): ?>
-
+      <?php get_template_part('templates/page-background'); ?>
       <?php get_template_part('templates/front-page'); ?>
-
     <?php else: ?>
+
+    <?php get_template_part('templates/page-background-pages'); ?>
 
     <div class="wrap container" role="document">
       <div class="content row">
           <div class="content-outer">
-                      <main class="main">
+            <main class="main">
               <?php include Wrapper\template_path(); ?>
-                     </main>
+            </main>
               <?php if (Setup\display_sidebar()) : ?>
               <aside class="sidebar">
               <?php include Wrapper\sidebar_path(); ?>

@@ -1,4 +1,23 @@
 .home{
+    .initiative-buttons-ounter-container {
+        padding: 20px 0;
+        .initiative-buttons-box {
+            margin-bottom: 15px;
+            .initiative-buttons-content {
+                margin: 0 22px 0 0px;
+            }
+            &:nth-child(2){
+                .initiative-buttons-content{
+                    margin: 0 49px 0 15px;
+                }
+            }
+            &:nth-child(3){
+                .initiative-buttons-content{
+                    margin: 0 -17px 0 -4px;
+                }
+            }
+        }
+    }
     .about-outer-container{
         padding: 30px 0;
         margin-bottom: 13px;
@@ -8,6 +27,7 @@
         .about-container{
             background: $color-light-green-opacity;
             padding: 20px 40px;
+            margin: 0px 30px;
             line-height: 1.6;
             min-height: 299px;
             @media (max-width: $screen-xs-max){

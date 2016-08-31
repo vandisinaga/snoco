@@ -7,3 +7,17 @@
   min-width: 51.63px;
   min-height: 51.63px;
 }
+.btn-donate {
+  float: right;
+  background: $color-green;
+  line-height: 31px;
+  text-align: center;
+  width: 149px;
+  height: 148px;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 7px;
+  font-size: 35px;
+  line-height: 1.8;
+  vertical-align: center
+}

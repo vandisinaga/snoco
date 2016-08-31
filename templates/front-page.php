@@ -2,7 +2,9 @@
 $banner = get_field('initiative_buttons', 'option');
 ?>
 
-<?php get_template_part('templates/initiative-button'); ?>
+<div class="container">
+    <?php get_template_part('templates/initiative-button'); ?>
+</div>
 
 <!--<div class="initiative-buttons-ounter-container">-->
 <!--    <div class="container">-->

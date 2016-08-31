@@ -6,7 +6,7 @@
  * Time: 5:12 PM
  */?>
 <div class="initiative-buttons-ounter-container">
-    <div class="container">
+
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 initiative-buttons-box">
             <div class="row">
                 <div class="initiative-buttons-content">
@@ -77,5 +77,5 @@
                 </div>
             </div>
         </div>
-    </div>
+
 </div>
