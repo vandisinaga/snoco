@@ -22,15 +22,22 @@ use Roots\Sage\Wrapper;
     <?php if(is_front_page()): ?>
       <?php get_template_part('templates/page-background'); ?>
       <?php get_template_part('templates/front-page'); ?>
+
+<!--    --><?php //elseif(36 == $post->post_parent): ?>
+<!--        --><?php //get_template_part('templates/page-background-pages'); ?>
+<!---->
+<!--    --><?php //elseif(42 == $post->post_parent): ?>
+<!--        --><?php //get_template_part('templates/page-background-initiative'); ?>
+
     <?php else: ?>
-
-    <?php get_template_part('templates/page-background-pages'); ?>
-
+        <?php get_template_part('templates/page-background-pages'); ?>
     <div class="wrap container" role="document">
       <div class="content row">
           <div class="content-outer">
             <main class="main">
-              <?php include Wrapper\template_path(); ?>
+                <div class="row">
+                    <?php include Wrapper\template_path(); ?>
+                </div>
             </main>
               <?php if (Setup\display_sidebar()) : ?>
               <aside class="sidebar">

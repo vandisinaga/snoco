@@ -2,9 +2,10 @@
   .main{
     margin-bottom: 15px;
     .about-container-content{
+      padding: 0 5px;
       h1{
-        margin: 28px 0 20px;
-        letter-spacing: 1.4px;
+        margin: 28px 0 20px 5px;
+        letter-spacing: 1.3px;
       }
       strong{
         font-size: 2.115rem;
@@ -17,11 +18,11 @@
     .about-committee-members{
       color: $color-grey3;
       margin: 57px 0 30px;
-      //padding-right: 0;
+      padding-left: 3px;
       .commitee-members-outers{
         &:nth-child(4n+2){
           .commitee-members{
-            margin-left: 36px;
+            margin-left: 38px;
             @media (max-width: $screen-sm-max){
               margin-left: 0px;
             }
@@ -68,7 +69,7 @@
             text-align: center;
           }
           .committee-member-company{
-            margin-bottom: 40px;
+            margin-bottom: 32px;
           }
         }
       }

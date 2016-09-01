@@ -15,9 +15,9 @@ if(strlen($home_page_background['url']) > 0)
             <?php if(strlen($home_page_background_caption) > 0): ?>
                 <?php echo $home_page_background_caption; ?>
             <?php endif; ?>
-            <a href="" class=" btn-donate"></a>
-            <div class="clearfix"></div>
         </div>
+        <a href="" class=" btn-donate"></a>
+        <div class="clearfix"></div>
     </div>
 </div>
 
