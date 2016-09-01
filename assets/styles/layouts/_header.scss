@@ -90,7 +90,6 @@ header{
               }
               @media (min-width: $screen-sm-min){
                 margin-right: -30px;
-                margin-bottom: -5px;
                 li{
                   display: inline-block;
                   &:hover,
@@ -160,7 +159,7 @@ header{
                 letter-spacing: 0.8px;
                 padding: 10px 5.8px;
                 @media (min-width: $screen-md-min){
-                  padding: 5px 12px;
+                  padding: 7px 12px;
                 }
               }
             }
