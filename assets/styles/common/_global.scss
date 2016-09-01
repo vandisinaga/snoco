@@ -16,6 +16,9 @@ a{
   @media (min-width: $screen-lg-min){
     width: 927px;
   }
+  @media (min-width: $screen-md-min){
+    width: 930px;
+  }
 }
 strong{
   color: $color-grey3;
