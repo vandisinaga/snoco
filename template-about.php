@@ -45,19 +45,19 @@ $steering_committee_content = get_field('steering_committee_content');
       <div class="col-md-4 col-sm-4 col-xs-12 commitee-members-outers">
         <div class="row">
           <div class="commitee-members">
-            <div class="committee-member-image">
-              <img src="<?php echo $image_source ?>" alt="<?php echo $image_title ?>" class="img-responsive"/>
-            </div>
-            <div class="committee-member-description">
+            <a href="<?php echo $image_source ?>" class="lightbox" rel="lightbox" title="<?php echo $description ?>">
+              <div class="committee-member-image">
+                <img src="<?php echo $image_source ?>" alt="<?php echo $image_title ?>" class="img-responsive"/>
+              </div>
               <div class="committee-member-name">
                 <?php echo $name ?>
               </div>
-              <div class="committee-member-job-title">
-                <?php echo $job_title ?>
-              </div>
-              <div class="committee-member-company">
-                <?php echo $location ?>
-              </div>
+            </a>
+            <div class="committee-member-job-title">
+              <?php echo $job_title ?>
+            </div>
+            <div class="committee-member-company">
+              <?php echo $location ?>
             </div>
           </div>
         </div>

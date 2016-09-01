@@ -5,6 +5,7 @@
  * Date: 8/29/2016
  * Time: 5:12 PM
  */?>
+
 <div class="initiative-buttons-ounter-container">
     <div class="container">
         <div class="initiative-buttons-inner-container">
@@ -25,7 +26,10 @@
                         <div class="initiative-buttons-content-inner">
                             <img src="<?php echo $initiative_buttons_left_image['url']?>" class="img-responsive"/>
                             <div class="initiative-button">
-                                <a href="<?php the_permalink(); ?>" class="btn btn-initiative"></a>
+                                <?php
+                                $initiative_buttons_left_url = get_field('initiative_buttons_left_url', 'option');
+                                ?>
+                                <a href="<?php echo $initiative_buttons_left_url?>" class="btn btn-initiative"></a>
                             </div>
                         </div>
                     </div>
@@ -49,7 +53,10 @@
                         <div class="initiative-buttons-content-inner">
                             <img src="<?php echo $initiative_buttons_middle_image['url']?>" class="img-responsive"/>
                             <div class="initiative-button">
-                                <a href="<?php the_permalink(); ?>" class="btn btn-initiative"></a>
+                                <?php
+                                $initiative_buttons_middle_url = get_field('initiative_buttons_middle_url', 'option');
+                                ?>
+                                <a href="<?php echo $initiative_buttons_middle_url?>" class="btn btn-initiative"></a>
                             </div>
                         </div>
                     </div>
@@ -72,7 +79,10 @@
                         <div class="initiative-buttons-content-inner">
                             <img src="<?php echo $initiative_buttons_right_image['url']?>" class="img-responsive"/>
                             <div class="initiative-button">
-                                <a href="<?php the_permalink(); ?>" class="btn btn-initiative"></a>
+                                <?php
+                                $initiative_buttons_right_url = get_field('initiative_buttons_right_url', 'option');
+                                ?>
+                                <a href="<?php echo $initiative_buttons_right_url?>" class="btn btn-initiative"></a>
                             </div>
                         </div>
                     </div>

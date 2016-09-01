@@ -1,8 +1,10 @@
 body{
   font-family: $open-sans;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 p{
-  @include font-size(1.8);
+  @include font-size(1.82);
   color: $color-grey2;
 }
 a{
@@ -12,7 +14,7 @@ a{
 
 .container {
   @media (min-width: $screen-lg-min){
-    width: 936px;
+    width: 927px;
   }
 }
 strong{

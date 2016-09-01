@@ -27,4 +27,8 @@ foreach ($sage_includes as $file) {
 }
 unset($file, $filepath);
 
-
+function ses_tinymce_css($wp) {
+    $wp .= ',' . get_bloginfo('stylesheet_url');
+    return $wp;
+}
+add_filter( 'mce_css', 'ses_tinymce_css' );
