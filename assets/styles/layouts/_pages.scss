@@ -54,11 +54,9 @@
         margin: 0;
         text-align: center;
         color: white;
-        @include font-size(4);
-        height: 66px;
+        @include font-size(3.3);
         line-height: 62px;
         background: $color-light-blue;
-        font-family: $Langdon;
       }
 
       .initiative-buttons-content-inner{
@@ -128,7 +126,7 @@
     padding: 10px 15px;
     h1{
       color: $color-green;
-      font-family: $Gotham-Medium-Regular;
+      //font-family: $Gotham-Medium-Regular;
       text-transform: uppercase;
     }
     h4{
@@ -154,15 +152,4 @@
       }
     }
   }
-}
-/* Safari 9.0+ (iOS Only) */
-
-@supports (-webkit-text-size-adjust:none) and (not (-ms-ime-align:auto))
-and (not (-moz-appearance:none))
-{
-
-  .initiative_buttons_title {
-    line-height: 72px;
-  }
-
 }

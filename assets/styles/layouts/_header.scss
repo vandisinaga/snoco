@@ -38,7 +38,6 @@ header{
             text-transform: uppercase;
             @include font-size(1.8);
             letter-spacing: 1px;
-            font-family: $Gotham-Medium-Regular;
             &:hover{
               background-color: $color-light-green;
             }
@@ -83,7 +82,6 @@ header{
                     a{
                       padding-left: 20px;
                       display: block;
-                      font-family: $proximanova-regular;
                     }
                   }
                 }
@@ -137,7 +135,6 @@ header{
                         }
                       }
                       a{
-                        font-family: $proximanova-regular;
                         color: $color-black;
                         padding: 10px;
                         display: block;
@@ -158,11 +155,12 @@ header{
               }
               a{
                 text-transform: uppercase;
+                font-family: $MuseoSans2;
                 font-size: 20.26px;
                 letter-spacing: 0.5px;
                 padding: 10px 5.8px;
                 @media (min-width: $screen-md-min){
-                  padding: 4px 12px;
+                  padding: 4px 17px;
                 }
               }
             }

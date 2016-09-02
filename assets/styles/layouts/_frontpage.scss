@@ -47,10 +47,12 @@
             h1{
                 color: $color-dark-green;
                 text-transform: uppercase;
-                font-family: $Gotham-Medium-Regular;
+                //font-family: $Gotham-Medium-Regular;
                 margin-bottom: 10px;
                 margin-top: 0px;
                 @include font-size(3.7);
+                letter-spacing: 1.6px;
+                margin-left: -5px;
             }
             p{
                 margin-bottom:20px;
