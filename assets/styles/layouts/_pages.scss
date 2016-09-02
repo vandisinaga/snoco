@@ -20,7 +20,7 @@
       color: $color-white;
       @include font-size(3);
       text-transform: uppercase;
-      margin-top: 15px;
+      margin-top: 11px;
       margin-bottom: 4px;
     }
     h3{
@@ -31,9 +31,9 @@
       font-size: 1.8rem;
       color: $color-white;
       letter-spacing: 5px;
-      margin-top: 5px;
+      margin: 7px -5.8% 0 0;
       @media (min-width: $screen-sm-min){
-        font-size: 3.3rem;
+        font-size: 3.5rem;
       }
     }
   }
@@ -60,6 +60,7 @@
         background: $color-light-blue;
         font-family: $Langdon;
       }
+
       .initiative-buttons-content-inner{
         position: relative;
         min-height: 212px;
@@ -136,7 +137,32 @@
         margin-bottom:15px;
       }
     }
+    .modal{
+      .modal-dialog{
+        .modal-content{
+          .modal-body{
+            .image-user-container{
+
+            }
+            .image-user-content-container{
+              h1{
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
+/* Safari 9.0+ (iOS Only) */
 
+@supports (-webkit-text-size-adjust:none) and (not (-ms-ime-align:auto))
+and (not (-moz-appearance:none))
+{
 
+  .initiative_buttons_title {
+    line-height: 72px;
+  }
+
+}

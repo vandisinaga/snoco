@@ -8,16 +8,25 @@
   min-height: 51.63px;
 }
 .btn-donate {
+  letter-spacing: 1.1px;
+  font-family: Langdon,Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
   float: right;
-  background: $color-green;
-  line-height: 31px;
+  background: #97c83e;
   text-align: center;
   width: 149px;
-  height: 148px;
+  height: 149px;
   border-radius: 100%;
-  display: inline-block;
-  margin-right: 7px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 35px;
-  line-height: 1.8;
-  vertical-align: center
+  color: white;
+  text-decoration: none;
+  span{
+    font-size: 36px;
+    letter-spacing: 2.2px;
+    margin-top: -15px;
+  }
 }
