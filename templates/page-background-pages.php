@@ -7,6 +7,12 @@ if(strlen($home_page_background['url']) > 0)
 }
 ?>
 <div class="home-page-background" style="<?php echo $style; ?>">
+    <div class="border-triangle hidden-xs">
+        <?php
+        $border_triangle_image = get_field('border_triangle_image');
+        ?>
+        <img src="<?php echo $border_triangle_image['url']?>" alt="">
+    </div>
     <div class="container">
         <div class="home-page-background-caption">
             <?php

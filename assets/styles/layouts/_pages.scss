@@ -1,3 +1,4 @@
+//big-background
 .home-page-background{
   background-position: 50%;
   background-repeat: no-repeat;
@@ -11,7 +12,7 @@
   .home-page-background-caption{
     top: 50%;
     transform: translateY(8%);
-    padding: 0 5.8%;
+    padding: 0 5.3%;
     h1{
       @media (min-width: $screen-sm-min){
         @include font-size(5.5);
@@ -23,9 +24,8 @@
       margin-top: 11px;
       margin-bottom: 4px;
     }
-    h3{
+    p{
       text-transform: uppercase;
-      font-family: Gotham-Medium-Regular,Helvetica,Arial,sans-serif;
       font-weight: 700;
       line-height: 1.6;
       font-size: 1.8rem;
@@ -39,12 +39,13 @@
   }
 }
 
+//initiative button
 .initiative-buttons-ounter-container{
-  padding: 15px 0;
+  padding: 14px 0 2px;
   .initiative-buttons-box{
     margin-bottom:15px;
     .initiative-buttons-content{
-      margin: 0 10% 0 -4.5%;
+      margin: 0 10% 0 -4.3%;
       min-height: 281px;
       @media (max-width: $screen-xs-max){
         margin: 12px 0px;
@@ -53,10 +54,13 @@
         text-transform: uppercase;
         margin: 0;
         text-align: center;
-        color: white;
+        color: $color-white;
         @include font-size(3.3);
-        line-height: 62px;
+        line-height: 66px;
         background: $color-light-blue;
+        @media (max-width: $screen-sm-min){
+          @include font-size(3);
+        }
       }
 
       .initiative-buttons-content-inner{
@@ -121,35 +125,36 @@
   }
 }
 
-.page-template{
-  .content-outer{
-    padding: 10px 15px;
-    h1{
-      color: $color-green;
-      //font-family: $Gotham-Medium-Regular;
-      text-transform: uppercase;
+//content under bacground cover
+.outer-container-content{
+  padding: 0 5px;
+  h1{
+    color: $color-green;
+    margin: 28px 0 10px 18px;
+    letter-spacing: 3.2px;
+  }
+  p{
+    color: $color-black;
+    line-height: 1.7;
+    letter-spacing: .35px;
+    -webkit-text-stroke-width: .2px;
+    margin-left: 16px;
+    margin-right: 17.8px;
+    strong{
+      font-size: 2.04rem;
+      line-height: 1;
+      letter-spacing: 0.4px;
+      -webkit-text-stroke-width: 0;
+      margin-right:0;
     }
-    h4{
-      strong{
-        color: $color-grey;
-        margin-bottom:15px;
-      }
-    }
-    .modal{
-      .modal-dialog{
-        .modal-content{
-          .modal-body{
-            .image-user-container{
+  }
+}
 
-            }
-            .image-user-content-container{
-              h1{
-                margin-top: 0;
-              }
-            }
-          }
-        }
-      }
-    }
+//social-icon
+.social-media{
+  float: right;
+  margin: 35px 6px 8px 0;
+  a{
+    display: inline-block;
   }
 }

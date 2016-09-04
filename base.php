@@ -50,17 +50,17 @@ use Roots\Sage\Wrapper;
 
     <?php endif ?>
 
-    <?php
-
-    global $post;     // if outside the loop
-
-    if ( is_page() && $post->post_parent ) {?>
-
-    <?php get_template_part('templates/initiative-button'); ?>
-
-    <?php } else {
-        // This is not a subpage
-    }?>
+<!--    --><?php
+//
+//    global $post;     // if outside the loop
+//
+//    if ( is_page() && $post->post_parent ) {?>
+<!---->
+<!--    --><?php //get_template_part('templates/initiative-button'); ?>
+<!---->
+<!--    --><?php //} else {
+//        // This is not a subpage
+//    }?>
 
     <?php
       do_action('get_footer');

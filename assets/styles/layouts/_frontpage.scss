@@ -1,68 +1,37 @@
 .home{
-    .initiative-buttons-ounter-container {
-        padding: 16px 0;
-        .initiative-buttons-inner-container{
-            .initiative-buttons-box {
-                margin-bottom: 15px;
-                .initiative-buttons-content {
-                    margin: 0 10.23% 0 -3.9%;
-                    @media (max-width: $screen-xs-max){
-                        margin: 12px 0px;
-                    }
-                }
-                &:nth-child(2){
-                    .initiative-buttons-content{
-                        margin: 0 14.5% 0 2%;
-                        @media (max-width: $screen-xs-max){
-                            margin: 12px 0px;
-                        }
-                    }
-                }
-                &:nth-child(3){
-                    .initiative-buttons-content{
-                        margin: 0 -7% 0 -4.2%;
-                        @media (max-width: $screen-xs-max){
-                            margin: 12px 0px;
-                        }
-                    }
-                }
-            }
-        }
+  .about-outer-container{
+    padding: 30px 0 25px;
+    margin-bottom: 11px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .about-container{
+      background: $color-light-green-opacity;
+      padding: 20px 30px 20px 35px;
+      margin: 0 15px;
+      line-height: 1.6;
+      min-height: 299px;
+      @media (max-width: $screen-xs-max){
+        padding: 20px;
+      }
+      h1{
+        color: $color-dark-green;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        @include font-size(3.7);
+        letter-spacing: 1.6px;
+        margin-left: -5px;
+      }
+      p{
+        margin-bottom:20px;
+        font-weight: 600;
+        line-height: 1.65;
+      }
+      a{
+        font-family: $open-sans;
+        color: $color-grey2;
+      }
     }
-    .about-outer-container{
-        padding: 30px 0 25px;
-        margin-bottom: 11px;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        .about-container{
-            background: $color-light-green-opacity;
-            padding: 20px 30px 20px 35px;
-            margin: 0 13px 0 15PX;
-            line-height: 1.6;
-            min-height: 299px;
-            @media (max-width: $screen-xs-max){
-                padding: 20px;
-            }
-            h1{
-                color: $color-dark-green;
-                text-transform: uppercase;
-                //font-family: $Gotham-Medium-Regular;
-                margin-bottom: 10px;
-                margin-top: 0px;
-                @include font-size(3.7);
-                letter-spacing: 1.6px;
-                margin-left: -5px;
-            }
-            p{
-                margin-bottom:20px;
-                font-weight: 600;
-                line-height: 1.65;
-            }
-            a{
-                font-family: $open-sans;
-                color: $color-grey2;
-            }
-        }
-    }
+  }
 }

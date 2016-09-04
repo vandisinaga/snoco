@@ -11,8 +11,6 @@ $brand-primary:         #27ae60;
 $font-size-base : 14px;
 
 
-
-
 // Colors
 $color-black:                       #000000;
 $color-white:                       #ffffff;
@@ -28,7 +26,8 @@ $color-light-grey:                  #f1f1f1;
 $color-dark-green:                  #47B046;
 $color-dark-grey:                   #bbbcbd;
 $color-light-green-opacity:         rgba(254, 255, 250, 0.7);
-//Font
+$color-grey-opacity:         rgba(216, 216, 216,0.6);
+  //Font
 
 @mixin font-face($font-family, $font-url, $font-name) {
   @font-face {

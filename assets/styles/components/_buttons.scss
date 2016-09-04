@@ -2,7 +2,6 @@
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
-  //background-color: red;
   background: url("../images/arrow.png") no-repeat center;
   min-width: 51.63px;
   min-height: 51.63px;
@@ -13,7 +12,7 @@
   text-transform: uppercase;
   float: right;
   margin-right: 2.2%;
-  background: #97c83e;
+  background: $color-light-green;
   text-align: center;
   width: 149px;
   height: 149px;
@@ -29,5 +28,15 @@
     font-size: 36px;
     letter-spacing: 2.2px;
     margin-top: -15px;
+  }
+  @media (max-width: $screen-xs-max){
+    width: 91px;
+    height: 90px;
+    font-size: 19px;
+    margin-top: 45px;
+    span{
+      font-size: 27px;
+      margin-top: -12px;
+    }
   }
 }

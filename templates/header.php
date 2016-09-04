@@ -7,7 +7,7 @@
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div class="row">
               <div class="header-logo">
-                <a class="brand" href="<?php echo esc_url(home_url('/')); ?>">
+                <a class="logo-image" href="<?php echo esc_url(home_url('/')); ?>">
                   <?php
                   $logo = get_field('logo_image', 'option');
                   if(strlen($logo['url'])):
@@ -27,7 +27,6 @@
               </div>
             </div>
           </div>
-          <div class="clearfix"></div>
         </div>
       </div>
     </div>
@@ -48,7 +47,7 @@
                 <span class="icon-bar "></span>
               </button>
 
-              <a class="brand hidden-lg hidden-md hidden-sm visible-xs" href="<?php echo esc_url(home_url('/')); ?>">
+              <a class="logo-image hidden-lg hidden-md hidden-sm visible-xs" href="<?php echo esc_url(home_url('/')); ?>">
                 <?php
                 $logo = get_field('logo_image', 'option');
                 if(strlen($logo['url'])):
@@ -69,6 +68,7 @@
               </div><!--/.nav-collapse -->
 
             </div>
+            <div class="clearfix"></div>
 
           </nav>
 
