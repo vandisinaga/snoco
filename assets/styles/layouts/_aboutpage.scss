@@ -1,31 +1,35 @@
 .page-template-template-about{
+  .btn-donate{
+    bottom: 30px;
+  }
   .about-committee-members{
     color: $color-grey3;
     margin: 57px 0 30px;
     padding-left: 3px;
     .commitee-members-outers{
-      &:nth-child(4n+2){
-        .commitee-members{
-          margin-left: 42px;
-          @media (max-width: $screen-sm-min){
-            margin: auto;
-          }
-        }
-      }
-      &:nth-child(4n+3){
-        .commitee-members{
-          margin-left: 72px;
-          @media (max-width: $screen-sm-min){
-            margin: auto;
-          }
-        }
-      }
+      //&:nth-child(4n+2){
+      //  .commitee-members{
+      //    margin-left: 42px;
+      //    @media (max-width: $screen-sm-min){
+      //      margin: auto;
+      //    }
+      //  }
+      //}
+      //&:nth-child(4n+3){
+      //  .commitee-members{
+      //    margin-left: 72px;
+      //    @media (max-width: $screen-sm-min){
+      //      margin: auto;
+      //    }
+      //  }
+      //}
       .commitee-members{
         width: 197px;
-        margin-left:21px;
-        @media (max-width: $screen-sm-min){
-          margin: auto;
-        }
+        //margin-left:21px;
+        margin: auto;
+        //@media (max-width: $screen-sm-min){
+        //  margin: auto;
+        //}
         .committee-member-image{
           img{
             cursor: pointer;

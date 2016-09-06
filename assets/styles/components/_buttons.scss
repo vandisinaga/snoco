@@ -10,7 +10,9 @@
   letter-spacing: 1.1px;
   font-family: Langdon,Helvetica,Arial,sans-serif;
   text-transform: uppercase;
-  float: right;
+  position: absolute;
+  right: 20px;
+  bottom: 81px;
   margin-right: 2.2%;
   background: $color-light-green;
   text-align: center;
@@ -38,5 +40,8 @@
       font-size: 27px;
       margin-top: -12px;
     }
+  }
+  @media (min-width: $screen-lg-min){
+    right: 14%;
   }
 }

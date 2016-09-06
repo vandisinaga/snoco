@@ -23,12 +23,6 @@ use Roots\Sage\Wrapper;
       <?php get_template_part('templates/page-background'); ?>
       <?php get_template_part('templates/front-page'); ?>
 
-<!--    --><?php //elseif(36 == $post->post_parent): ?>
-<!--        --><?php //get_template_part('templates/page-background-pages'); ?>
-<!---->
-<!--    --><?php //elseif(42 == $post->post_parent): ?>
-<!--        --><?php //get_template_part('templates/page-background-initiative'); ?>
-
     <?php else: ?>
         <?php get_template_part('templates/page-background-pages'); ?>
     <div class="wrap container" role="document">
@@ -50,17 +44,6 @@ use Roots\Sage\Wrapper;
 
     <?php endif ?>
 
-<!--    --><?php
-//
-//    global $post;     // if outside the loop
-//
-//    if ( is_page() && $post->post_parent ) {?>
-<!---->
-<!--    --><?php //get_template_part('templates/initiative-button'); ?>
-<!---->
-<!--    --><?php //} else {
-//        // This is not a subpage
-//    }?>
 
     <?php
       do_action('get_footer');

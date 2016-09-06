@@ -87,8 +87,8 @@ function display_sidebar() {
     is_front_page(),
     is_page_template('template-custom.php'),
     is_page_template('template-about.php'),
-    is_page_template('template-initiatives.php'),
     is_page_template('template-gugo.php'),
+    is_page_template('template-acp.php'),
 
   ]);
 
@@ -125,8 +125,13 @@ if( function_exists('acf_add_options_page') ) {
         'parent_slug' => 'theme-general-settings',
     ));
     acf_add_options_sub_page(array(
-        'page_title' => 'Social Media Settings',
-        'menu_title' => 'Social Media Settings',
+        'page_title' => 'Gugo Theme Settings',
+        'menu_title' => 'Gugo Theme Settings',
+        'parent_slug' => 'theme-general-settings',
+    ));
+    acf_add_options_sub_page(array(
+        'page_title' => 'ACP Theme Settings',
+        'menu_title' => 'ACP Theme Settings',
         'parent_slug' => 'theme-general-settings',
     ));
 }

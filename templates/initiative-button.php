@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 initiative-buttons-box">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 initiative-buttons-box">
                 <div class="row">
                     <div class="initiative-buttons-content">
                         <?php
@@ -62,7 +62,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 initiative-buttons-box">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 initiative-buttons-box">
                 <div class="row">
                     <div class="initiative-buttons-content">
                         <?php
