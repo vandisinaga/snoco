@@ -233,6 +233,12 @@
     margin-left: 29px;
     li{
       display: none;
+      &.current_page_parent,
+      &.page_item_has_children{
+        >a{
+          display: none;
+        }
+      }
       &.current_page_ancestor,
       &.current_page_item{
         display: inline-block;
