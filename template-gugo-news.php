@@ -1,18 +1,28 @@
 <?php
 /**
- * Template Name: Gugo Template
+ * Template Name: Gugo News Template
  */
 ?>
 
+<h1 class="title-page"><?php echo the_title();?></h1>
 
+<?php //while (have_posts()) : the_post(); ?>
+<!--<div class="outer-container-content">-->
+<!--  --><?php //get_template_part('templates/page', 'header'); ?>
+<!--  --><?php //get_template_part('templates/content', 'page'); ?>
+<!--</div>-->
+<?php //endwhile; ?>
 
-<?php while (have_posts()) : the_post(); ?>
-<div class="outer-container-content">
-  <?php get_template_part('templates/page', 'header'); ?>
-  <?php get_template_part('templates/content', 'page'); ?>
+<div class="article-outer-container">
+  <?php query_posts('category_name=gear-up-go');
+  while (have_posts()) : the_post();?>
+    <div class="article-container">
+      <div class="article-content">
+        <?php get_template_part('templates/content-list-news'); ?>
+      </div>
+    </div>
+  <?php  endwhile;  ?>
 </div>
-<?php endwhile; ?>
-
 
 <div class="box-link-container">
   <?php

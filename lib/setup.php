@@ -88,7 +88,9 @@ function display_sidebar() {
     is_page_template('template-custom.php'),
     is_page_template('template-about.php'),
     is_page_template('template-gugo.php'),
+    is_page_template('template-gugo-news.php'),
     is_page_template('template-acp.php'),
+    is_page_template('content-single.php'),
 
   ]);
 

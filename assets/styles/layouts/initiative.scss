@@ -1,34 +1,5 @@
-.page-template-template-gugo-php{
-  &.page-parent{
-    .title-page{
-      display: none;
-    }
-    .article-outer-container{
-      display: none;
-    }
-  }
+.page-template-template-gugo-php,.page-template-template-gugo-news{
   .home-page-background{
-    .border-triangle{
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 410px 367px 0 0;
-      border-color: $color-grey-opacity  transparent transparent transparent;
-      img{
-        position: absolute;
-        top: 36px;
-        left: 12px;
-        @media (max-width: $screen-xs-max){
-          position: absolute;
-          top: -2px;
-          left: -3px;
-          width: 89px;
-        }
-      }
-      @media (max-width: $screen-xs-max){
-        border-width: 156px 142px 0 0;
-      }
-    }
     .home-page-background-caption{
       position: absolute;
       bottom: 0;
@@ -38,12 +9,50 @@
       top:auto;
       p{
         margin: auto;
-        width: 855px;
+        width: 844px;
         padding-top: 11px;
         padding-bottom: 5px;
         letter-spacing: 2.9px;
       }
     }
+    .btn-donate{
+      background-color: $color-orange-opacity;
+    }
+  }
+  .second-menu-container{
+    background: $color-orange;
+  }
+  .title-page{
+    color: $color-light-green;
+    padding: 0 18px;
+  }
+  .outer-container-content {
+    padding: 35px 5px 0;
+  }
+}
+.page-template-template-acp{
+  .home-page-background{
+    .home-page-background-caption{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: $color-dark-blue;
+      top:auto;
+      p{
+        margin: auto;
+        width: 844px;
+        padding-top: 11px;
+        padding-bottom: 5px;
+        letter-spacing: 2.9px;
+      }
+    }
+    .btn-donate{
+      background-color: $color-grey-opacity;
+    }
+  }
+  .second-menu-container{
+    background: $color-grey-green;
   }
   .title-page{
     color: $color-light-green;
