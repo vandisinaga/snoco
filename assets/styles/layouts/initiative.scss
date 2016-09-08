@@ -1,4 +1,10 @@
-.page-template-template-gugo-php,.page-template-template-gugo-news{
+//GUGO SECTION
+.page-template-template-gugo-php,.page-template-template-gugo-news,.page-template-template-gugo-gallery{
+  &.page-parent{
+    .title-page{
+      display: none;
+    }
+  }
   .home-page-background{
     .home-page-background-caption{
       position: absolute;
@@ -21,6 +27,18 @@
   }
   .second-menu-container{
     background: $color-orange;
+    .page_item_has_children{
+      a{
+        color: $color-white;
+      }
+      .children{
+        .current_page_item{
+          a{
+            color: $color-yellow;
+          }
+        }
+      }
+    }
   }
   .title-page{
     color: $color-light-green;
@@ -30,7 +48,62 @@
     padding: 35px 5px 0;
   }
 }
-.page-template-template-acp{
+.gugo-gallery-container{
+  margin-top: 20px;
+  .gugo-gallery-image-outer-container{
+    width: 304px;
+    float: left;
+    margin: 5px 8px 0;
+    .gugo-gallery-image-inner-container{
+      padding: 7px 7px 18px;
+      border: solid thin #808080;
+      position: relative;
+      border-radius: 9px;
+      &::before{
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: -4px;
+        border-bottom: 1px solid gray;
+        border-radius: 6px;
+        z-index: -1;
+      }
+      &::after{
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: -8px;
+        border-bottom: 1px solid gray;
+        border-radius: 6px;
+        z-index: -1;
+      }
+      .gugo-gallery-image{
+        border: solid thin black;
+      }
+    }
+    .gugo-gallery-image-description {
+      padding: 12px 0px;
+      p{
+        color: $color-dark-green;
+        font-weight:bold;
+        font-size: 1.5rem;;
+      }
+    }
+  }
+}
+
+//ACP SECTION
+
+.page-template-template-acp,.page-template-template-acp-news{
+  &.page-parent{
+    .title-page{
+      display: none;
+    }
+  }
   .home-page-background{
     .home-page-background-caption{
       position: absolute;
@@ -48,17 +121,46 @@
       }
     }
     .btn-donate{
-      background-color: $color-grey-opacity;
+      background-color: $color-grey-green-opacity;
     }
   }
   .second-menu-container{
     background: $color-grey-green;
   }
+  h1{
+    color: $color-light-blue;
+  }
   .title-page{
-    color: $color-light-green;
+    color: $color-light-blue;
     padding: 0 18px;
   }
   .outer-container-content {
     padding: 35px 5px 0;
+  }
+  .article-outer-container{
+    .article-container{
+      .article-content{
+        article{
+          header{
+            .entry-title{
+              a{
+                color: $color-grey-green;
+              }
+            }
+            .post-info{
+              p{
+
+              }
+            }
+          }
+          .entry-summary{
+
+            p{
+
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -170,38 +170,6 @@
     display: inline-block;
   }
 }
-.article-outer-container{
-  padding: 5px 18px;
-  .article-container{
-    .article-content{
-      article{
-        header{
-          .entry-title{
-            font-size: 2.13rem;
-            letter-spacing: .4px;
-            font-family: $open-sans;
-            font-weight: 600;
-            a{
-              color: $color-orange;
-            }
-          }
-          .post-info{
-            p{
-              font-style: italic;
-              margin-bottom:4px
-            }
-          }
-        }
-        .entry-summary{
-          margin: 15px 0 50px;
-          p{
-            letter-spacing: .2px;
-          }
-        }
-      }
-    }
-  }
-}
 
 .border-triangle{
   width: 0;
@@ -213,6 +181,7 @@
     position: absolute;
     top: 36px;
     left: 12px;
+    width: 191px;
     @media (max-width: $screen-xs-max){
       position: absolute;
       top: -2px;
@@ -292,6 +261,23 @@
     }
     @media (max-width: $screen-xs-max){
       margin-left:0;
+    }
+  }
+}
+
+.single{
+  .hentry{
+    margin: 15px 0;
+    header{
+      h1{
+        color: $color-dark-green;
+      }
+    }
+    .entry-content{
+      
+    }
+    footer{
+      background-color: $color-white;
     }
   }
 }

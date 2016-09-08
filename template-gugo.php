@@ -4,6 +4,14 @@
  */
 ?>
 
+<h1 class="title-page">
+  <?php
+  $the_title = get_field('content_title');
+  ?>
+  <?php if(strlen($the_title) > 0): ?>
+    <?php echo $the_title; ?>
+  <?php endif; ?>
+</h1>
 
 
 <?php while (have_posts()) : the_post(); ?>
@@ -12,7 +20,6 @@
   <?php get_template_part('templates/content', 'page'); ?>
 </div>
 <?php endwhile; ?>
-
 
 <div class="box-link-container">
   <?php

@@ -26,9 +26,11 @@ $color-light-grey:                  #f1f1f1;
 $color-dark-green:                  #47B046;
 $color-dark-grey:                   #bbbcbd;
 $color-grey-green:                  #4d7f70;
+$color-yellow:                      #ffea0a;
 $color-orange-opacity:              rgba(247, 144, 60,0.8);
 $color-light-green-opacity:         rgba(254, 255, 250, 0.7);
 $color-grey-opacity:                rgba(245,245,245,0.7);
+$color-grey-green-opacity:          rgba(77, 127, 112,0.7);
   //Font
 
 @mixin font-face($font-family, $font-url, $font-name) {

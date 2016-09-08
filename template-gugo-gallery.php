@@ -1,28 +1,50 @@
 <?php
 /**
- * Template Name: Gugo News Template
+ * Template Name: Gugo gallery Template
  */
 ?>
 
-<h1 class="title-page">
-  <?php
-  $the_title = get_field('content_title');
-  ?>
-  <?php if(strlen($the_title) > 0): ?>
-    <?php echo $the_title; ?>
-  <?php endif; ?>
-</h1>
 
-<div class="article-outer-container">
-  <?php query_posts('category_name=gear-up-go');
-  while (have_posts()) : the_post();?>
-    <div class="article-container">
-      <div class="article-content">
-        <?php get_template_part('templates/content-list-news'); ?>
+<h1 class="title-page"><?php echo the_title();?></h1>
+
+<div class="gugo-gallery-container">
+  <?php
+  $gugo_gallery = get_field('gugo_gallery');
+  if($gugo_gallery):
+    $i=0;
+    foreach($gugo_gallery as $list):
+      $image = $list['gugo_gallery_image'];
+
+      $image_source = '';
+      $image_title = '';
+
+      if(strlen($image['url']) > 0)
+      {
+        $image_source = $image['url'];
+        $image_title = $image['title'];
+      }
+      $gugo_gallery_title = $list['gugo_gallery_title'];
+      ?>
+
+      <div class="gugo-gallery-image-outer-container">
+        <div class="gugo-gallery-image-inner-container">
+          <div class="gugo-gallery-image">
+            <a href="" class="img-responsive">
+              <img src="<?php echo $image_source ?>" alt="<?php echo $image_title ?>" class="img-responsive"/>
+            </a>
+          </div>
+        </div>
+        <div class="gugo-gallery-image-description">
+          <a href="">
+            <p><?php echo $gugo_gallery_title?></p>
+          </a>
+        </div>
       </div>
-    </div>
-  <?php  endwhile;  ?>
+    <?php endforeach; ?>
+    <div class="clearfix"></div>
+  <?php endif; ?>
 </div>
+
 
 <div class="box-link-container">
   <?php

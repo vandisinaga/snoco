@@ -35,11 +35,12 @@ use Roots\Sage\Wrapper;
 
                             $args = array(
                                 'child_of' => get_top_ancestor_id(),
-                                'title_li' => ''
+                                'title_li' => '',
+                                'order-by' => date,
+                                'sort_column'=> date,
+                                'sort_order'=> asc,
                             );
-
                             ?>
-
                             <?php wp_list_pages($args); ?>
                         </ul>
                     </div>
