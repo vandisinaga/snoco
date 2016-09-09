@@ -27,12 +27,9 @@
   }
   .second-menu-container{
     background: $color-orange;
-    .page_item_has_children{
-      a{
-        color: $color-white;
-      }
-      .children{
-        .current_page_item{
+    .second-menu{
+      .menu{
+        .current-menu-item{
           a{
             color: $color-yellow;
           }
@@ -126,6 +123,15 @@
   }
   .second-menu-container{
     background: $color-grey-green;
+    .second-menu{
+      .menu{
+        .current-menu-item{
+          a{
+            color: $color-dark-blue;
+          }
+        }
+      }
+    }
   }
   h1{
     color: $color-light-blue;

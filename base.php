@@ -25,45 +25,26 @@ use Roots\Sage\Wrapper;
 
     <?php else: ?>
         <?php get_template_part('templates/page-background-pages'); ?>
-        <?php $parents = get_post_ancestors($post);
-        foreach($parents as $page_id){
-            if($page_id == 83){ ?>
-                <div class="second-menu-container">
-                    <div class="container">
-                        <ul class="second-menu">
-                            <?php
-
-                            $args = array(
-                                'child_of' => get_top_ancestor_id(),
-                                'title_li' => '',
-                                'order-by' => date,
-                                'sort_column'=> date,
-                                'sort_order'=> asc,
-                            );
-                            ?>
-                            <?php wp_list_pages($args); ?>
-                        </ul>
-                    </div>
+        <?php global $post;?>
+        <?php if (is_page('advance-care-planning') ||($post->post_parent == 85)): ?>
+        <div class="second-menu-container">
+            <div class="container">
+                <div class="second-menu">
+                    <?php wp_nav_menu('menu= Advanced Care Planning'); ?>
                 </div>
-<!--                --><?php
-//                global $post;
-//                $top_parents = get_post_ancestors( $post->ID );
-//                $list_children = wp_list_pages( 'title_li=&child_of='.$post->ID.'&echo=0' );
-//                if ($top_parents[0] == 83) :
-//                    if ( $list_children) : ?>
-<!--                        <div class="second-menu-container">-->
-<!--                            <div class="container">-->
-<!--                                <ul class="second-menu">-->
-<!--                                    --><?php //echo $list_children; ?>
-<!--                                </ul>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!---->
-<!--                    --><?php //endif; ?>
-<!--                --><?php //endif;?>
-                <?php break; //Match found, no need to keep checking
-            }
-        }?>
+            </div>
+        </div>
+
+        <?php elseif (is_page('gear-up-go') || ($post->post_parent == 87)): ?>
+        <div class="second-menu-container">
+            <div class="container">
+                <div class="second-menu">
+                    <?php wp_nav_menu('menu= Gear Up Go'); ?>
+                </div>
+            </div>
+        </div>
+        <?php endif; ?>
+
     <div class="wrap container" role="document">
       <div class="content row">
           <div class="content-outer">
