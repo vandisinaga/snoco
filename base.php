@@ -27,22 +27,32 @@ use Roots\Sage\Wrapper;
         <?php get_template_part('templates/page-background-pages'); ?>
         <?php global $post;?>
         <?php if (is_page('advance-care-planning') ||($post->post_parent == 85)): ?>
-        <div class="second-menu-container">
-            <div class="container">
-                <div class="second-menu">
-                    <?php wp_nav_menu('menu= Advanced Care Planning'); ?>
+            <div class="second-menu-container">
+                <div class="container">
+                    <div class="second-menu">
+                        <?php wp_nav_menu('menu= Advanced Care Planning'); ?>
+                    </div>
                 </div>
             </div>
-        </div>
 
         <?php elseif (is_page('gear-up-go') || ($post->post_parent == 87)): ?>
-        <div class="second-menu-container">
-            <div class="container">
-                <div class="second-menu">
-                    <?php wp_nav_menu('menu= Gear Up Go'); ?>
+            <div class="second-menu-container">
+                <div class="container">
+                    <div class="second-menu">
+                        <?php wp_nav_menu('menu= Gear Up Go'); ?>
+                    </div>
                 </div>
             </div>
-        </div>
+
+
+            <?php elseif (is_page('live-healthy-2020') || ($post->post_parent == 89)): ?>
+            <div class="second-menu-container">
+                <div class="container">
+                    <div class="second-menu">
+                        <?php wp_nav_menu('menu= Live Healthy 2020'); ?>
+                    </div>
+                </div>
+            </div>
         <?php endif; ?>
 
     <div class="wrap container" role="document">

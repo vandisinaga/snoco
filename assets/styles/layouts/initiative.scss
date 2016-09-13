@@ -39,7 +39,6 @@
   }
   .title-page{
     color: $color-light-green;
-    padding: 0 18px;
   }
   .outer-container-content {
     padding: 35px 5px 0;
@@ -138,7 +137,6 @@
   }
   .title-page{
     color: $color-light-blue;
-    padding: 0 18px;
   }
   .outer-container-content {
     padding: 35px 5px 0;
@@ -163,6 +161,129 @@
 
             p{
 
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//LIVE HEALTHY
+.page-template-template-live-healty{
+  .home-page-background{
+    .home-page-background-caption{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: $color-light-blue;
+      top:auto;
+      p{
+        margin: auto;
+        width: 844px;
+        padding-top: 11px;
+        padding-bottom: 5px;
+        letter-spacing: 2.9px;
+      }
+    }
+    .btn-donate{
+      background-color: $color-light-blue-opacity;
+    }
+  }
+  .second-menu-container{
+    background: $color-dark-blue1;
+    .second-menu{
+      .menu{
+        li{
+          &:nth-last-of-type(1){
+            a{
+              background-color: $color-dark-green;
+              padding: 5px 5px;
+            }
+          }
+        }
+        .current-menu-item{
+          a{
+            color: $color-dark-green;
+          }
+        }
+      }
+    }
+  }
+  .title-page{
+    color: $color-light-blue;
+  }
+  .live-healthy-poster-outer-container{
+    background-color: $color-grey-blue;
+    padding: 25px 19px;
+    margin: 28px 17.8px 28px 16px;
+    .live-healthy-poster-container{
+      .poster-image{
+        float: left;
+        margin-right: 25px;
+        @media (max-width: $screen-xs-max){
+          float: none;
+          img{
+            margin: auto auto 15px;
+          }
+        }
+      }
+      .poster-description{
+        h1{
+          color: $color-light-green;
+          margin-top:0;
+        }
+        ul{
+          li{
+            color: $color-white;
+            list-style-position: inside;
+            font-size: 1.75rem;
+          }
+        }
+      }
+    }
+  }
+  .why-to-get-involved-container{
+    margin: 40px 17.8px 0px 16px;
+    .why-to-get-involved-content{
+      padding-left: 7px;
+      .title-page{
+        padding: 0 27% 0 0;
+        letter-spacing: 3.8px;
+        font-weight: 600;
+        font-size: 3.6rem;
+        @media (max-width: $screen-xs-max){
+          padding:0;
+        }
+      }
+      p{
+        padding: 0 25px 0 0;
+      }
+    }
+    img{
+      margin: 20px 0;
+      width: 100%;
+    }
+  }
+  .services-container{
+    .services-image{
+      padding: 15px 18px 0;
+    }
+  }
+  
+  .box-link-container{
+    margin-top: 0;
+    .box-link-inner-container{
+      &:nth-of-type(4){
+        .box-menu-image{
+          a{
+            @media (min-width: $screen-sm-min){
+              img{
+                height: 275px;
+                width: 274px;
+                max-width: none;
+              }
             }
           }
         }

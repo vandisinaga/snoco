@@ -92,6 +92,7 @@ function display_sidebar() {
     is_page_template('template-gugo-gallery.php'),
     is_page_template('template-acp.php'),
     is_page_template('template-acp-news.php'),
+    is_page_template('template-live-healty.php'),
 
   ]);
 
@@ -135,6 +136,11 @@ if( function_exists('acf_add_options_page') ) {
     acf_add_options_sub_page(array(
         'page_title' => 'ACP Theme Settings',
         'menu_title' => 'ACP Theme Settings',
+        'parent_slug' => 'theme-general-settings',
+    ));
+    acf_add_options_sub_page(array(
+        'page_title' => 'Live healty Theme Settings',
+        'menu_title' => 'Live healty Settings',
         'parent_slug' => 'theme-general-settings',
     ));
 }

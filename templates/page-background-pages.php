@@ -1,5 +1,4 @@
 <?php
-
 $style = '';
 $home_page_background = get_field('home_page_background');
 if(strlen($home_page_background['url']) > 0)

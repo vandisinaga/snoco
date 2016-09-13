@@ -18,5 +18,7 @@
     </header>
     <div class="entry-summary">
         <?php the_excerpt(); ?>
+        <?php $gugonews = get_field('post_link_url');?>
+        <a href="<?php echo $gugonews?>">More..</a>
     </div>
 </article>

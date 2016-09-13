@@ -24,7 +24,7 @@
                             <?php endif; ?>
                         </h1>
                         <div class="initiative-buttons-content-inner">
-                            <img src="<?php echo $initiative_buttons_left_image['url']?>" class="img-responsive"/>
+                            <img src="<?php echo $initiative_buttons_left_image['url']?>" alt="<?php echo $initiative_buttons_left_image['title']?>" class="img-responsive"/>
                             <div class="initiative-button">
                                 <?php
                                 $initiative_buttons_left_url = get_field('initiative_buttons_left_url', 'option');
@@ -51,7 +51,7 @@
                             <?php endif; ?>
                         </h1>
                         <div class="initiative-buttons-content-inner">
-                            <img src="<?php echo $initiative_buttons_middle_image['url']?>" class="img-responsive"/>
+                            <img src="<?php echo $initiative_buttons_middle_image['url']?>" alt="<?php echo $initiative_buttons_middle_image['title']?>" class="img-responsive"/>
                             <div class="initiative-button">
                                 <?php
                                 $initiative_buttons_middle_url = get_field('initiative_buttons_middle_url', 'option');
@@ -77,7 +77,7 @@
                             <?php endif; ?>
                         </h1>
                         <div class="initiative-buttons-content-inner">
-                            <img src="<?php echo $initiative_buttons_right_image['url']?>" class="img-responsive"/>
+                            <img src="<?php echo $initiative_buttons_right_image['url']?>" alt="<?php echo $initiative_buttons_right_image['title']?>" class="img-responsive"/>
                             <div class="initiative-button">
                                 <?php
                                 $initiative_buttons_right_url = get_field('initiative_buttons_right_url', 'option');

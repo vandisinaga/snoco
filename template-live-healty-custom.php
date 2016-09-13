@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: ACP News Template
+ * Template Name: Live-healty Custom Template
  */
 ?>
 
@@ -13,24 +13,21 @@
   <?php endif; ?>
 </h1>
 
-<div class="article-outer-container">
-  <?php query_posts('category_name=advance-care-planning');
-  while (have_posts()) : the_post();?>
-    <div class="article-container">
-      <div class="article-content">
-        <?php get_template_part('templates/content-list-news'); ?>
-      </div>
-    </div>
-  <?php  endwhile;  ?>
+
+<?php while (have_posts()) : the_post(); ?>
+<div class="outer-container-content">
+  <?php get_template_part('templates/page', 'header'); ?>
+  <?php get_template_part('templates/content', 'page'); ?>
 </div>
+<?php endwhile; ?>
 
 <div class="box-link-container">
   <?php
-  $box_link = get_field('acp_button_bottom','option');
+  $box_link = get_field('live_healty_button_bottom','option');
   if($box_link):
     $i=0;
     foreach($box_link as $list):
-      $image = $list['acp_button_bottom_image'];
+      $image = $list['live_healty_button_bottom_image'];
 
       $image_source = '';
       $image_title = '';
@@ -41,7 +38,7 @@
         $image_title = $image['title'];
       }
 
-      $box_link_url = $list['acp_button_bottom_url'];
+      $box_link_url = $list['live_healty_button_bottom_url'];
       ?>
       <div class="col-sm-3 box-link-inner-container">
         <div class="row">
@@ -59,11 +56,11 @@
 
 <div class="social-media">
   <?php
-  $box_link = get_field('acp_social_media','option');
+  $box_link = get_field('live_healty_social_media','option');
   if($box_link):
     $i=0;
     foreach($box_link as $list):
-      $image = $list['acp_social_media_image'];
+      $image = $list['live_healty_social_media_image'];
 
       $image_source = '';
       $image_title = '';
@@ -74,15 +71,15 @@
         $image_title = $image['title'];
       }
 
-      $box_link_url = $list['acp_social_media_url'];
+      $box_link_url = $list['live_healty_media_url'];
       ?>
       <a href="<?php echo $box_link_url ?>">
         <img src="<?php echo $image_source ?>" alt="<?php echo $image_title ?>" class="img-responsive"/>
       </a>
     <?php endforeach; ?>
-    <div class="clearfix"></div>
   <?php endif; ?>
 </div>
+<div class="clearfix"></div>
 
 
 

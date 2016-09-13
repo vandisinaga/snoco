@@ -58,7 +58,26 @@ function get_top_parent_page_id() {
 }
 
 function new_excerpt_more( $more ) {
-    return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('More..', 'your-text-domain') . '</a>';
+    return ' <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('', 'your-text-domain') . '</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
+
+//function the_excerpt_max_charlength($charlength) {
+//    $excerpt = get_the_excerpt();
+//    $charlength++;
+//
+//    if ( mb_strlen( $excerpt ) > $charlength ) {
+//        $subex = mb_substr( $excerpt, 0, $charlength - 5 );
+//        $exwords = explode( ' ', $subex );
+//        $excut = - ( mb_strlen( $exwords[ count( $exwords ) - 1 ] ) );
+//        if ( $excut < 0 ) {
+//            echo mb_substr( $subex, 0, $excut );
+//        } else {
+//            echo $subex;
+//        }
+//        echo '';
+//    } else {
+//        echo $excerpt;
+//    }
+//}
