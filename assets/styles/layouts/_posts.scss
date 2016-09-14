@@ -1,5 +1,5 @@
 .article-outer-container{
-  padding: 5px 18px;
+  padding: 20px 18px 40px;
   .article-container{
     .article-content{
       article{
@@ -11,7 +11,7 @@
             font-weight: 600;
             margin-top:50px;
             a{
-              color: $color-orange;
+              color: $color-dark-green;
             }
           }
           .post-info{

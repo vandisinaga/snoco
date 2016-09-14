@@ -1,5 +1,5 @@
 //GUGO SECTION
-.page-template-template-gugo-php,.page-template-template-gugo-news,.page-template-template-gugo-gallery{
+.page-template-template-gugo-php,.page-template-template-gugo-news{
   &.page-parent{
     .title-page{
       display: none;
@@ -28,65 +28,50 @@
   .second-menu-container{
     background: $color-orange;
     .second-menu{
-      .menu{
-        .current-menu-item{
-          a{
-            color: $color-yellow;
+      .nav-primary{
+        .navbar-header{
+          #second-menu{
+            .menu{
+              .current-menu-item{
+                a{
+                  color: $color-yellow;
+                }
+              }
+              }
+            }
           }
         }
       }
     }
-  }
   .title-page{
     color: $color-light-green;
   }
   .outer-container-content {
     padding: 35px 5px 0;
   }
-}
-.gugo-gallery-container{
-  margin-top: 20px;
-  .gugo-gallery-image-outer-container{
-    width: 304px;
-    float: left;
-    margin: 5px 8px 0;
-    .gugo-gallery-image-inner-container{
-      padding: 7px 7px 18px;
-      border: solid thin #808080;
-      position: relative;
-      border-radius: 9px;
-      &::before{
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: -4px;
-        border-bottom: 1px solid gray;
-        border-radius: 6px;
-        z-index: -1;
-      }
-      &::after{
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: -8px;
-        border-bottom: 1px solid gray;
-        border-radius: 6px;
-        z-index: -1;
-      }
-      .gugo-gallery-image{
-        border: solid thin black;
-      }
-    }
-    .gugo-gallery-image-description {
-      padding: 12px 0px;
-      p{
-        color: $color-dark-green;
-        font-weight:bold;
-        font-size: 1.5rem;;
+  .article-outer-container{
+    .article-container{
+      .article-content{
+        article{
+          header{
+            .entry-title{
+              a{
+                color: $color-orange;
+              }
+            }
+            .post-info{
+              p{
+
+              }
+            }
+          }
+          .entry-summary{
+
+            p{
+
+            }
+          }
+        }
       }
     }
   }
@@ -101,6 +86,17 @@
     }
   }
   .home-page-background{
+    .border-triangle{
+      img{
+        width: 242px;
+        @media (max-width: $screen-xs-max){
+          position: absolute;
+          top: 5px;
+          width: 129px;
+          left: 2px;
+        }
+      }
+    }
     .home-page-background-caption{
       position: absolute;
       bottom: 0;
@@ -123,10 +119,16 @@
   .second-menu-container{
     background: $color-grey-green;
     .second-menu{
-      .menu{
-        .current-menu-item{
-          a{
-            color: $color-dark-blue;
+      .nav-primary{
+        .navbar-header{
+          #second-menu{
+            .menu{
+              .current-menu-item{
+                a{
+                  color: $color-dark-blue;
+                }
+              }
+            }
           }
         }
       }
@@ -191,21 +193,28 @@
       background-color: $color-light-blue-opacity;
     }
   }
+
   .second-menu-container{
     background: $color-dark-blue1;
     .second-menu{
-      .menu{
-        li{
-          &:nth-last-of-type(1){
-            a{
-              background-color: $color-dark-green;
-              padding: 5px 5px;
+      .nav-primary{
+        .navbar-header{
+          #second-menu{
+            .menu{
+              li{
+                &:nth-last-of-type(1){
+                  a{
+                    background-color: $color-dark-green;
+                    padding: 5px 5px;
+                  }
+                }
+              }
+              .current-menu-item{
+                a{
+                  color: $color-dark-green;
+                }
+              }
             }
-          }
-        }
-        .current-menu-item{
-          a{
-            color: $color-dark-green;
           }
         }
       }
@@ -278,10 +287,11 @@
       &:nth-of-type(4){
         .box-menu-image{
           a{
-            @media (min-width: $screen-sm-min){
-              img{
+            img{
+              height:235px;
+              @media (min-width: $screen-sm-max){
                 height: 275px;
-                width: 274px;
+                width: 264px;
                 max-width: none;
               }
             }

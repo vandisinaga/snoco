@@ -93,6 +93,7 @@ function display_sidebar() {
     is_page_template('template-acp.php'),
     is_page_template('template-acp-news.php'),
     is_page_template('template-live-healty.php'),
+    is_page_template('template-news.php'),
 
   ]);
 

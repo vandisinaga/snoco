@@ -26,34 +26,40 @@ use Roots\Sage\Wrapper;
     <?php else: ?>
         <?php get_template_part('templates/page-background-pages'); ?>
         <?php global $post;?>
-        <?php if (is_page('advance-care-planning') ||($post->post_parent == 85)): ?>
-            <div class="second-menu-container">
-                <div class="container">
-                    <div class="second-menu">
-                        <?php wp_nav_menu('menu= Advanced Care Planning'); ?>
-                    </div>
+        <div class="second-menu-container">
+            <div class="container">
+                <div class="second-menu">
+                    <nav class="navbar nav-primary">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#second-menu" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar "></span>
+                            </button>
+                            <div id="second-menu" class="collapse navbar-collapse">
+
+                                <!--if page is advance-care-planning or child page from advance-care-planning-->
+                                <?php if (is_page('advance-care-planning') ||($post->post_parent == 85)): ?>
+                                    <?php wp_nav_menu('menu= Advanced Care Planning'); ?>
+
+                                <!--if page is gear-up-go or child page from gear-up-go-->
+                                <?php elseif (is_page('gear-up-go') || ($post->post_parent == 87)): ?>
+                                    <?php wp_nav_menu('menu= Gear Up Go'); ?>
+
+                                <!--if page is live-healthy-2020 or child page from live-healthy-2020-->
+                                <?php elseif (is_page('live-healthy-2020') || ($post->post_parent == 89)): ?>
+                                <?php wp_nav_menu('menu= Live Healthy 2020'); ?>
+
+                                <?php endif; ?>
+                            </div><!--/.nav-collapse -->
+                        </div>
+                        <div class="clearfix"></div>
+                    </nav>
                 </div>
             </div>
-
-        <?php elseif (is_page('gear-up-go') || ($post->post_parent == 87)): ?>
-            <div class="second-menu-container">
-                <div class="container">
-                    <div class="second-menu">
-                        <?php wp_nav_menu('menu= Gear Up Go'); ?>
-                    </div>
-                </div>
-            </div>
-
-
-            <?php elseif (is_page('live-healthy-2020') || ($post->post_parent == 89)): ?>
-            <div class="second-menu-container">
-                <div class="container">
-                    <div class="second-menu">
-                        <?php wp_nav_menu('menu= Live Healthy 2020'); ?>
-                    </div>
-                </div>
-            </div>
-        <?php endif; ?>
+        </div>
+    <?php endif ?>
 
     <div class="wrap container" role="document">
       <div class="content row">
@@ -72,7 +78,6 @@ use Roots\Sage\Wrapper;
       </div>
     </div>
 
-    <?php endif ?>
 
 
     <?php
