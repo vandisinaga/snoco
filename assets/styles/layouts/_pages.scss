@@ -312,3 +312,25 @@
     width:100%;
   }
 }
+
+//event calendar
+.simcal-calendar{
+  .simcal-calendar-grid{
+    .simcal-calendar-head{
+
+    }
+    tbody{
+      tr{
+        td{
+          .simcal-events{
+            li{
+              .simcal-event-title{
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
