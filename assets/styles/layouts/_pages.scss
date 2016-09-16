@@ -110,6 +110,17 @@
         }
       }
     }
+    &:nth-child(odd){
+      .initiative-buttons-content{
+        .initiative-buttons-content-inner{
+          @media (max-width: $screen-sm-max){
+            img{
+              width: 179px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -163,7 +174,7 @@
       }
     }
   }
-  margin: 0px 0 35px;
+  margin: 15px 0 35px;
 }
 //social-icon
 .social-media{
@@ -276,7 +287,7 @@
 
 .single{
   .hentry{
-    margin: 15px 0;
+    margin: 15px;
     header{
       h1{
         color: $color-dark-green;
@@ -338,13 +349,25 @@
 
 //event calendar
 .simcal-calendar{
+  border: solid 2px #d8d8d8;
+  padding: 20px;
+  margin-bottom: 50px;
   .simcal-calendar-grid{
     .simcal-calendar-head{
-
+      .simcal-week-day{
+        background: $color-dark-grey;
+        padding: 10px ;
+      }
     }
     tbody{
       tr{
         td{
+          .simcal-day-label{
+            text-align: left;
+            background-color: $color-grey;
+            color: $color-white;
+            padding: 7px 5px;
+          }
           .simcal-events{
             li{
               .simcal-event-title{
@@ -356,4 +379,90 @@
       }
     }
   }
+}
+
+//news
+.title-news{
+  border-bottom: solid 2px $color-light-green;
+  .title-page{
+    color: $color-light-green;
+  }
+}
+
+//gravityform
+.gravity-form-container{
+  padding: 0 18px 0px;
+  form{
+    .gform_heading{
+      .gform_title{
+        font-size: 2.6rem;
+        color: $color-dark-green;
+      }
+    }
+    .gform_body{
+      .gform_fields{
+        li{
+          .gfield_label{
+            font-family: $open-sans;
+          }
+          .ginput_container{
+            label{
+              display: none;
+            }
+          }
+          .ginput_container_radio{
+            .gfield_radio{
+              label{
+                display: inline-block;
+                vertical-align: top;
+              }
+            }
+          }
+        }
+      }
+    }
+    .gform_footer{
+      input[type="submit"]{
+        vertical-align: top;
+        border-radius: 0;
+        padding: 6px 12px 7px;
+        width: 126px;
+        background: $color-green;
+        color: $color-white;
+        border-color: $color-green;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        &:hover{
+          background-color: $color-light-green;
+        }
+      }
+      p{
+        font-size:1.4rem;
+      }
+    }
+  }
+}
+
+.ngg-albumoverview{
+  .ngg-album-compact{
+    @media (max-width: $screen-xs-max){
+      padding: 0!important;
+    }
+    .ngg-album-compactbox{
+      .ngg-album-link{
+        .Link{
+          img{
+            @media (max-width: $screen-xs-max){
+              width: 286px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-next{
+  float: right;
 }

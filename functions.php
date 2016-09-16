@@ -81,3 +81,10 @@ add_filter( 'excerpt_more', 'new_excerpt_more' );
 //        echo $excerpt;
 //    }
 //}
+
+//add_filter( 'gform_submit_button_1', 'add_paragraph_below_submit', 10, 2 );
+//function add_paragraph_below_submit( $button, $form ) {
+//
+//    return $button .= "<p><i>Never submit passwords through Google Forms.</i></p>";
+//}
+

@@ -50,27 +50,23 @@
     padding: 35px 5px 0;
   }
   .article-outer-container{
-    .article-container{
-      .article-content{
-        article{
-          header{
-            .entry-title{
-              a{
-                color: $color-orange;
-              }
-            }
-            .post-info{
-              p{
-
-              }
-            }
+    article{
+      header{
+        .entry-title{
+          a{
+            color: $color-orange;
           }
-          .entry-summary{
+        }
+        .post-info{
+          p{
 
-            p{
-
-            }
           }
+        }
+      }
+      .entry-summary{
+
+        p{
+
         }
       }
     }
@@ -144,27 +140,23 @@
     padding: 35px 5px 0;
   }
   .article-outer-container{
-    .article-container{
-      .article-content{
-        article{
-          header{
-            .entry-title{
-              a{
-                color: $color-grey-green;
-              }
-            }
-            .post-info{
-              p{
-
-              }
-            }
+    article{
+      header{
+        .entry-title{
+          a{
+            color: $color-grey-green;
           }
-          .entry-summary{
+        }
+        .post-info{
+          p{
 
-            p{
-
-            }
           }
+        }
+      }
+      .entry-summary{
+
+        p{
+
         }
       }
     }

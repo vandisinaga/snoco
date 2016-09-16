@@ -1,11 +1,16 @@
 <?php
 $style = '';
-$home_page_background = get_field('home_page_background');
-if(strlen($home_page_background['url']) > 0)
+$page_background = get_field('home_page_background');
+$home_page_background = get_field('home_page_background', 'option');
+if(strlen($page_background['url']) > 0)
 {
+    $style = "background-image: url('".$page_background['url']."');";
+}
+else{
     $style = "background-image: url('".$home_page_background['url']."');";
 }
 ?>
+
 <div class="home-page-background" style="<?php echo $style; ?>">
 
     <?php if (is_page('advance-care-planning') ||($post->post_parent == 85)): ?>
@@ -43,6 +48,7 @@ if(strlen($home_page_background['url']) > 0)
             <p>Live Healthy 2020</p>
         </div>
     <?php endif; ?>
+
     <?php
     $donate_us = get_field('donate_us');
     ?>

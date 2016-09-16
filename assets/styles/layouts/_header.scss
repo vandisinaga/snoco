@@ -10,8 +10,9 @@ header{
             height: auto;
             margin-top: -29px;
             margin-bottom: 4px;
-            @media (max-width: $screen-sm-max){
-              width: 100%;
+            margin-left: -25px;
+            @media (min-width: $screen-sm-max){
+              margin-left: -50px;
             }
           }
         }
@@ -19,7 +20,10 @@ header{
       .search-form-container{
         -webkit-box-shadow: 7px 6px 22px -4px #a29292;
         box-shadow: 7px 6px 22px -4px #a29292;
-        margin-right: -11px;
+        margin-right: -10px;
+        @media (min-width: $screen-sm-max){
+          margin-right: -45px;
+        }
         form{
           label{
             input{
@@ -56,7 +60,7 @@ header{
   .header-bottom-outer{
     .nav-primary{
       min-height: 0;
-      margin: 0 -14px;
+      margin: 0 -6px;
       @media (min-width: $screen-sm-min){
         float: right;
       }
@@ -165,7 +169,7 @@ header{
                 letter-spacing: 2.1px;
                 padding: 10px 5.8px;
                 @media (min-width: $screen-md-min){
-                  padding: 4px 13px;
+                  padding: 13px;
                 }
               }
             }

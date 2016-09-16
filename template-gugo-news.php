@@ -13,16 +13,9 @@
   <?php endif; ?>
 </h1>
 
-<div class="article-outer-container">
-  <?php query_posts('category_name=gear-up-go');
-  while (have_posts()) : the_post();?>
-    <div class="article-container">
-      <div class="article-content">
-        <?php get_template_part('templates/content-list-news'); ?>
-      </div>
-    </div>
-  <?php  endwhile;  ?>
-</div>
+<?php query_posts('category_name=gear-up-go&showposts=10'); while (have_posts()) : the_post(); ?>
+  <?php get_template_part('templates/content'); ?>
+<?php endwhile; ?>
 
 <div class="box-link-container">
   <?php
