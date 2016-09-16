@@ -23,6 +23,7 @@
     }
     .btn-donate{
       background-color: $color-orange-opacity;
+      bottom: 81px;
     }
   }
   .second-menu-container{
@@ -43,7 +44,7 @@
         }
       }
     }
-  .title-page{
+  h1{
     color: $color-light-green;
   }
   .outer-container-content {
@@ -110,6 +111,7 @@
     }
     .btn-donate{
       background-color: $color-grey-green-opacity;
+      bottom: 81px;
     }
   }
   .second-menu-container{
@@ -131,9 +133,6 @@
     }
   }
   h1{
-    color: $color-light-blue;
-  }
-  .title-page{
     color: $color-light-blue;
   }
   .outer-container-content {
@@ -183,6 +182,7 @@
     }
     .btn-donate{
       background-color: $color-light-blue-opacity;
+      bottom: 81px;
     }
   }
 
@@ -196,7 +196,7 @@
               li{
                 &:nth-last-of-type(1){
                   a{
-                    background-color: $color-dark-green;
+                    background-color: $color-dark-green2;
                     padding: 5px 5px;
                   }
                 }
@@ -212,7 +212,7 @@
       }
     }
   }
-  .title-page{
+  h1{
     color: $color-light-blue;
   }
   .live-healthy-poster-outer-container{

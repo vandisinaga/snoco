@@ -66,7 +66,7 @@ $services = get_field('services');
 <?php if(strlen($services['title']) > 0): ?>
   <div class="services-container">
     <div class="services-image">
-      <img src="<?php echo $services['url']?>" alt="<?php echo $services['title']?>">
+      <img src="<?php echo $services['url']?>" alt="<?php echo $services['title']?>" class="img-responsive">
     </div>
     <div class="services-content">
 

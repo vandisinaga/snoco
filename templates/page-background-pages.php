@@ -13,7 +13,7 @@ else{
 
 <div class="home-page-background" style="<?php echo $style; ?>">
 
-    <?php if (is_page('advance-care-planning') ||($post->post_parent == 85)): ?>
+    <?php if (is_page('advance-care-planning') ||($post->post_parent == 112)): ?>
     <?php
     $initiative_buttons_middle_image = get_field('initiative_buttons_middle_image', 'option');
     ?>
@@ -26,7 +26,7 @@ else{
             <p>Advace Care Planning</p>
         </div>
 
-    <?php elseif (is_page('gear-up-go') || ($post->post_parent == 87)): ?>
+    <?php elseif (is_page('gear-up-go') || ($post->post_parent == 114)): ?>
         <?php
         $initiative_buttons_right_image = get_field('initiative_buttons_right_image', 'option');
         ?>
@@ -37,7 +37,7 @@ else{
             <p>Gear Up and Go!</p>
         </div>
 
-    <?php elseif (is_page('live-healthy-2020') || ($post->post_parent == 89)): ?>
+    <?php elseif (is_page('live-healthy-2020') || ($post->post_parent == 116)): ?>
         <?php
         $initiative_buttons_left_image = get_field('initiative_buttons_left_image', 'option');
         ?>
@@ -46,6 +46,17 @@ else{
         </div>
         <div class="home-page-background-caption">
             <p>Live Healthy 2020</p>
+        </div>
+    <?php elseif (is_page('84') || ($post->post_parent == 84)): ?>
+        <div class="container">
+            <div class="home-page-background-caption">
+                <?php
+                $home_page_background_caption = get_field('home_page_background_caption');
+                ?>
+                <?php if(strlen($home_page_background_caption) > 0): ?>
+                    <?php echo $home_page_background_caption; ?>
+                <?php endif; ?>
+            </div>
         </div>
     <?php endif; ?>
 

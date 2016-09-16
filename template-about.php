@@ -4,12 +4,6 @@
  */
 ?>
 
-<?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/page', 'header'); ?>
-  <?php get_template_part('templates/content', 'page'); ?>
-<?php endwhile; ?>
-
-
 
 <?php
 $steering_committee_content = get_field('steering_committee_content');
@@ -17,6 +11,12 @@ $steering_committee_content = get_field('steering_committee_content');
 
   <div class="outer-container-content">
     <?php echo $steering_committee_content ?>
+      <div class="outer-container-content">
+          <?php while (have_posts()) : the_post(); ?>
+              <?php get_template_part('templates/page', 'header'); ?>
+              <?php get_template_part('templates/content', 'page'); ?>
+          <?php endwhile; ?>
+      </div>
   </div>
 
   <div class="about-committee-members">
