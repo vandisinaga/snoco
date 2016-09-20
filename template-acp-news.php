@@ -14,7 +14,8 @@
 </h1>
 
 
-<?php query_posts('category_name=advance-care-planning&showposts=10'); while (have_posts()) : the_post(); ?>
+<?php query_posts('category_name=advance-care-planning&showposts=10');
+  while (have_posts()) : the_post(); ?>
   <?php get_template_part('templates/content'); ?>
 <?php endwhile; ?>
 

@@ -33,11 +33,14 @@
         .navbar-header{
           #second-menu{
             .menu{
-              .current-menu-item{
-                a{
-                  color: $color-yellow;
+              li{
+                &:hover,
+                &.current-menu-item{
+                  a{
+                    color: $color-yellow;
+                  }
                 }
-              }
+                }
               }
             }
           }
@@ -121,9 +124,12 @@
         .navbar-header{
           #second-menu{
             .menu{
-              .current-menu-item{
-                a{
-                  color: $color-dark-blue;
+              li{
+                &:hover,
+                &.current-menu-item{
+                  a{
+                    color: $color-dark-blue;
+                  }
                 }
               }
             }
@@ -196,14 +202,22 @@
               li{
                 &:nth-last-of-type(1){
                   a{
-                    background-color: $color-dark-green2;
+                    background-color: $color-dark-green;
                     padding: 5px 5px;
                   }
+                  &:hover,
+                  &.current-menu-item{
+                    a{
+                      background: $color-white;
+                      color: $color-dark-green;
+                    }
+                  }
                 }
-              }
-              .current-menu-item{
-                a{
-                  color: $color-dark-green;
+                &:hover,
+                &.current-menu-item{
+                  a{
+                    color: $color-dark-green;
+                  }
                 }
               }
             }

@@ -4,14 +4,14 @@
  */
 ?>
 
-<h1 class="title-page">
-  <?php
-  $the_title = get_field('content_title');
-  ?>
-  <?php if(strlen($the_title) > 0): ?>
+<?php
+$the_title = get_field('content_title');
+?>
+<?php if(strlen($the_title) > 0): ?>
+  <h1 class="title-page">
     <?php echo $the_title; ?>
-  <?php endif; ?>
-</h1>
+  </h1>
+<?php endif; ?>
 
 
 <?php while (have_posts()) : the_post(); ?>

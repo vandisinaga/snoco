@@ -11,11 +11,15 @@
             color: $color-dark-green;
           }
         }
-        .post-info{
-          p{
-            font-style: italic;
-            margin-bottom:4px
+        .publishBy{
+          a{
+            color: $color-black;
           }
+        }
+        .time-publish{
+          font-style: italic;
+          margin-bottom: 4px;
+          font-size: 1.75rem;
         }
       }
       .entry-summary{

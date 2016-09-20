@@ -368,6 +368,7 @@
         background: $color-dark-grey2;
         padding: 10px;
         color: $color-white;
+        font-size: 1.8rem;
       }
     }
     tbody{
@@ -378,6 +379,7 @@
             background-color: $color-light-grey2;
             color: $color-white;
             padding: 7px 10px;
+            font-size: 1.5rem;
           }
           .simcal-events{
             li{
@@ -385,6 +387,7 @@
                 font-size: 1.5rem;
                 color: $color-light-blue2;
                 font-weight: bold;
+                letter-spacing: 0;
               }
             }
           }
@@ -476,6 +479,12 @@
   }
 }
 
-.nav-next{
-  float: right;
+//pagination
+.nav-links{
+  .nav-previous{
+    display: inline-block;
+  }
+  .nav-next{
+    float: right;
+  }
 }

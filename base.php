@@ -43,18 +43,15 @@ use Roots\Sage\Wrapper;
                             <div id="second-menu" class="collapse navbar-collapse">
 
                                 <!--if page is advance-care-planning or child page from advance-care-planning-->
-                                <?php if (is_page('advance-care-planning') ||($post->post_parent == 112)): ?>
-                                    <?php wp_nav_menu('menu= Advanced Care Planning'); ?>
+                                <?php if ( is_page_template('template-acp.php' )|| is_page_template('template-acp-news.php' )) {
+                                    wp_nav_menu('menu= Advanced Care Planning');?>
 
-                                <!--if page is gear-up-go or child page from gear-up-go-->
-                                <?php elseif (is_page('gear-up-go') || ($post->post_parent == 114)): ?>
-                                    <?php wp_nav_menu('menu= Gear Up Go'); ?>
+                                <?php } elseif( is_page_template('template-gugo.php' )|| is_page_template('template-gugo-news.php' )) {
+                                   wp_nav_menu('menu= Gear Up Go'); ?>
 
-                                <!--if page is live-healthy-2020 or child page from live-healthy-2020-->
-                                <?php elseif (is_page('live-healthy-2020') || ($post->post_parent == 116)): ?>
-                                <?php wp_nav_menu('menu= Live Healthy 2020'); ?>
-
-                                <?php endif; ?>
+                                <?php } elseif( is_page_template('template-live-healty.php' )) {
+                                    wp_nav_menu('menu= Live Healthy 2020');
+                                }?>
                             </div><!--/.nav-collapse -->
                         </div>
                         <div class="clearfix"></div>

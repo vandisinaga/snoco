@@ -13,7 +13,8 @@
   <?php endif; ?>
 </h1>
 
-<?php query_posts('category_name=gear-up-go&showposts=10'); while (have_posts()) : the_post(); ?>
+<?php $query = new WP_Query( array('tag' =>'gear-up-and-go' ) );
+  while ($query->have_posts()) : $query->the_post(); ?>
   <?php get_template_part('templates/content'); ?>
 <?php endwhile; ?>
 
