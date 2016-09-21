@@ -30,6 +30,11 @@
         .committee-member-image{
           img{
             cursor: pointer;
+            @media (max-width: $screen-xs-max){
+              margin: auto;
+              max-width: 78%;
+              height: 122px;
+            }
           }
         }
         .committee-member-information{
@@ -88,6 +93,7 @@
         }
         @media (max-width: $screen-xs-max){
           margin: auto;
+          width: auto;
         }
       }
     }

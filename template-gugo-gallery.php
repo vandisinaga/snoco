@@ -65,7 +65,7 @@
 
       $box_link_url = $list['gugo_button_bottom_url'];
       ?>
-      <div class="col-sm-3 box-link-inner-container">
+      <div class="col-sm-3 col-xs-6 box-link-inner-container">
         <div class="row">
           <div class="box-menu-image">
             <a href="<?php echo $box_link_url ?>">

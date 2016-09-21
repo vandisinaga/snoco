@@ -292,14 +292,17 @@
     .box-link-inner-container{
       &:nth-of-type(4){
         .box-menu-image{
+          position: relative;
           a{
             img{
-              height:235px;
-              @media (min-width: $screen-sm-max){
-                height: 275px;
-                width: 264px;
-                max-width: none;
-              }
+            }
+            &:after{
+              content: url("../../images/join-arrow.png");
+              min-width: 51.63px;
+              min-height: 51.63px;
+              position: absolute;
+              top:-20px;
+              right: -30px;
             }
           }
         }

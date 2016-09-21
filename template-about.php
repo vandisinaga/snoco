@@ -45,7 +45,7 @@ $steering_committee_content = get_field('steering_committee_content');
     $a=$i++;
   ?>
 
-      <div class="col-md-4 col-sm-4 col-xs-12 commitee-members-outers">
+      <div class="col-md-4 col-sm-4 col-xs-6 commitee-members-outers">
         <div class="row">
           <div class="commitee-members">
               <div class="committee-member-image" data-toggle="modal" data-target="#modalUser<?php echo $a ?>">
@@ -91,7 +91,9 @@ $steering_committee_content = get_field('steering_committee_content');
         </div>
       </div>
     <?php if($a == 2): ?>
-      <div class="clearfix"></div>
+      <div class="clearfix hidden-xs"></div>
+    <?php elseif($a== 1):?>
+      <div class="clearfix visible-xs"></div>
     <?php endif ?>
 <?php endforeach; ?>
     <div class="clearfix"></div>

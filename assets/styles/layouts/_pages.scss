@@ -122,11 +122,42 @@
       }
     }
   }
+  @media screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
+    .col-xs-12{
+      width: 31.278% !important;
+      margin: 0 5px;
+      .initiative-buttons-content{
+        min-height: 220px;
+        .initiative_buttons_title{
+          font-size: 1.8rem;
+        }
+        .initiative-buttons-content-inner{
+          min-height: 158px;
+          a{
+            img{
+
+            }
+          }
+        }
+      }
+      &:nth-child(odd){
+        .initiative-buttons-content{
+          .initiative-buttons-content-inner{
+            @media (max-width: $screen-sm-max){
+              img{
+                width: 112px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 //content under bacground cover
 .outer-container-content{
-  padding: 0 5px;
+  padding: 0px 5px 10px;
   h1{
     color: $color-green;
     margin: 28px 0 10px 18px;
@@ -151,30 +182,38 @@
 //box-bottom
 .box-link-container{
   .box-link-inner-container{
-    &:nth-child(1){
-      .box-menu-image{
-        margin-left: 3px;
-      }
-    }
-    &:nth-child(2){
-      .box-menu-image{
-        margin-left: 5px;
-      }
-    }
-    &:nth-child(3){
-      .box-menu-image{
-        margin-left: 6px;
-      }
-    }
+    //&:nth-child(1){
+    //  .box-menu-image{
+    //    margin-left: 3px;
+    //  }
+    //}
+    //&:nth-child(2){
+    //  .box-menu-image{
+    //    margin-left: 5px;
+    //  }
+    //}
+    //&:nth-child(3){
+    //  .box-menu-image{
+    //    margin-left: 6px;
+    //  }
+    //}
     .box-menu-image{
       margin: 10px auto;
       display: table;
       @media (max-width: $screen-xs-max){
-        margin: 10px auto !important;
+        margin: 5px !important;
+      }
+    }
+    &.col-xs-6{
+      @media screen and (min-width: 420px) and (max-width: 767px) and (orientation: landscape) {
+        width: 25% !important;
       }
     }
   }
   margin: 15px 0 35px;
+  @media (max-width: $screen-xs-max){
+    margin: 15px 15px 35px;
+  }
 }
 //social-icon
 .social-media{
@@ -258,6 +297,9 @@
               @media (max-width: $screen-sm-min) {
                 margin-right: 6px;
                 font-size: 1.3rem;
+              }
+              @media (min-width: $screen-sm-min)and(max-width: $screen-sm-max) {
+                font-size: 98%;
               }
             }
             &:nth-last-of-type(1) {
@@ -439,8 +481,6 @@
     }
     .gform_footer{
       input[type="submit"]{
-        vertical-align: top;
-        border-radius: 0;
         padding: 6px 12px 7px;
         width: 126px;
         background: $color-green;

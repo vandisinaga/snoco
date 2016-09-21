@@ -1,8 +1,15 @@
 header{
   .header-top-outer{
-    margin-top: 57px;
+    margin-top: 47px;
     margin-bottom: 11px;
     .header-top-container{
+      .social-media{
+        margin-right: -48px;
+        margin-bottom: 10px;
+        @media (max-width: $screen-sm-max){
+          margin-right: -15px;
+        }
+      }
       .header-logo{
         .logo-image{
           img{
@@ -20,9 +27,9 @@ header{
       .search-form-container{
         -webkit-box-shadow: 7px 6px 22px -4px #a29292;
         box-shadow: 7px 6px 22px -4px #a29292;
-        margin-right: -10px;
-        @media (min-width: $screen-sm-max){
-          margin-right: -45px;
+        margin-right: -42px;
+        @media (max-width: $screen-sm-max){
+          margin-right: -10px;
         }
         form{
           label{
@@ -178,7 +185,7 @@ header{
       }
     }
     @media (max-width: $screen-xs-max){
-      padding: 10px;
+      padding: 5px 0px;
     }
   }
 }

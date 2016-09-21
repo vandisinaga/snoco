@@ -10,6 +10,10 @@ p{
 a{
   color: $color-dark-green;
   //font-family: $Gotham-Medium-Regular;
+  &:hover,
+  &:focus{
+    text-decoration: none;
+  }
 }
 
 .container {
