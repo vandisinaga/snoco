@@ -52,7 +52,7 @@
         margin: 0 10px;
         @media (max-width: $screen-xs-min){
           margin: 15px auto;
-          max-width: 320px;
+          max-width: 316px;
         }
         .initiative_buttons_title{
           background-color: $color-green;
@@ -92,7 +92,11 @@
         .initiative-buttons-content-inner{
           a{
             img{
-              margin-left: 20px;
+              padding-left: 20px;
+              @media (min-width: $screen-xs-min){
+                margin-left: 20px;
+                padding-left:0;
+              }
             }
           }
           .initiative-button{
@@ -127,7 +131,11 @@
         .initiative-buttons-content-inner{
           a{
             img{
-              margin-left: 20px;
+              padding-left: 20px;
+              @media (min-width: $screen-xs-min){
+                margin-left: 20px;
+                padding-left:0;
+              }
             }
           }
           .initiative-button{
