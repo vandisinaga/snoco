@@ -1,32 +1,12 @@
 .page-template-template-about{
-  .about-committee-members{
+  .steering-committee-members{
     color: $color-grey3;
     margin: 57px 0 30px;
     padding-left: 3px;
     .commitee-members-outers{
-      //&:nth-child(4n+2){
-      //  .commitee-members{
-      //    margin-left: 42px;
-      //    @media (max-width: $screen-sm-min){
-      //      margin: auto;
-      //    }
-      //  }
-      //}
-      //&:nth-child(4n+3){
-      //  .commitee-members{
-      //    margin-left: 72px;
-      //    @media (max-width: $screen-sm-min){
-      //      margin: auto;
-      //    }
-      //  }
-      //}
       .commitee-members{
         width: 197px;
-        //margin-left:21px;
         margin: auto;
-        //@media (max-width: $screen-sm-min){
-        //  margin: auto;
-        //}
         .committee-member-image{
           img{
             cursor: pointer;
@@ -41,16 +21,28 @@
           margin-top: 38px;
           text-align: center;
           margin-bottom: 50px;
+          @media (max-width: $screen-xs-max){
+            margin-bottom: 15px;
+            margin-top: 0;
+          }
           .committee-member-name{
             cursor: pointer;
             h1{
               font-size: 2.2rem;
               font-weight: bold;
               color: $color-grey;
+              @media (max-width: $screen-xs-max){
+                margin-top:10px;
+                margin-bottom: 5px;
+              }
             }
           }
           .committee-member-job-title{
-
+            p{
+              @media (max-width: $screen-xs-max){
+                margin-bottom: 5px;
+              }
+            }
           }
           .committee-member-company{
             a{
@@ -96,6 +88,10 @@
           width: auto;
         }
       }
+    }
+    @media (max-width: $screen-xs-max){
+      margin: 0
+    ;
     }
   }
   .initiative-buttons-ounter-container{

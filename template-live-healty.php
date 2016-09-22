@@ -20,60 +20,49 @@ $the_title = get_field('content_title');
 </div>
 <?php endwhile; ?>
 
-<?php
-$poster_live_healty_image = get_field('poster_live_healty_image');
-$poster_live_healty_title = get_field('poster_live_healty_title');
-$poster_live_healty_list = get_field('poster_live_healty_list');
-?>
+<?php if(is_page('what-is-lh2020')): ?>
+<?php elseif(is_page('how-it-works')): ?>
+    <?php
+    $how_it_works_image = get_field('how_it_works_image');
+    ?>
+    <?php if(strlen($how_it_works_image['title']) > 0): ?>
+        <div class="live-healthy-outer-container">
+            <div class="live-healthy-inner-container">
+                <div class="poster-image">
+                    <img src="<?php echo $how_it_works_image['url']?>" alt="<?php echo $how_it_works_image['title']?>" class="img-responsive">
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    <?php endif; ?>
+<?php elseif(is_page('community-portal')): ?>
+<?php elseif(is_page('become-a-signatory')): ?>
+<?php elseif(is_page('why-join')): ?>
+    <?php
+    $poster_why_join_image = get_field('poster_why_join_image');
+    $poster_why_join_title = get_field('poster_why_join_title');
+    $poster_why_join_list = get_field('poster_why_join_list');
+    $why_to_get_involved_content = get_field('why_to_get_involved_content');
+    $why_to_get_involved_content_image = get_field('why_to_get_involved_content_image');
+    ?>
 
-<?php if(strlen($poster_live_healty_title) > 0): ?>
-  <div class="live-healthy-poster-outer-container">
-    <div class="live-healthy-poster-container">
-      <div class="poster-image">
-        <img src="<?php echo $poster_live_healty_image['url']?>" alt="<?php echo $poster_live_healty_image['title']?>" class="img-responsive">
-      </div>
+    <?php if(strlen($poster_why_join_title) > 0): ?>
+        <div class="live-healthy-poster-outer-container">
+            <div class="live-healthy-poster-container">
+                <div class="poster-image">
+                    <img src="<?php echo $poster_why_join_image['url']?>" alt="<?php echo $poster_why_join_image['title']?>" class="img-responsive">
+                </div>
 
-      <div class="poster-description">
-        <h1 class="title-banner"><?php echo $poster_live_healty_title?></h1>
-        <?php echo $poster_live_healty_list?>
-      </div>
+                <div class="poster-description">
+                    <h1 class="title-banner"><?php echo $poster_why_join_title?></h1>
+                    <?php echo $poster_why_join_list?>
+                </div>
 
-    </div>
-    <div class="clearfix"></div>
-  </div>
-<?php endif; ?>
-
-<?php
-$why_to_get_involved_content = get_field('why_to_get_involved_content');
-$why_to_get_involved_content_image = get_field('why_to_get_involved_content_image');
-?>
-
-<?php if(strlen($why_to_get_involved_content) > 0): ?>
-  <div class="why-to-get-involved-container">
-    <div class="why-to-get-involved-content">
-      <?php echo $why_to_get_involved_content ?>
-    </div>
-    <a href="<?php echo $why_to_get_involved_content_image['url']?>">
-      <img src="<?php echo $why_to_get_involved_content_image['url']?>" alt="<?php echo $why_to_get_involved_content_image['title']?>">
-    </a>
-  </div>
-<?php endif; ?>
-
-<?php
-$services = get_field('services');
-?>
-<?php if(strlen($services['title']) > 0): ?>
-  <div class="services-container">
-    <div class="services-image">
-      <img src="<?php echo $services['url']?>" alt="<?php echo $services['title']?>" class="img-responsive">
-    </div>
-    <div class="services-content">
-
-    </div>
-  </div>
-<?php endif; ?>
-
-
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    <?php endif; ?>
+<?php endif;?>
 
 <div class="box-link-container">
   <?php

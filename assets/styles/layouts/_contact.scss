@@ -23,6 +23,15 @@
                   }
                 }
               }
+              .gfield_captcha_container{
+                label{
+                  display: none;
+                }
+                .gfield_captcha{
+                  border: solid thin #d8d8d8 !important;
+                  margin-bottom: 15px !important;
+                }
+              }
             }
           }
         }

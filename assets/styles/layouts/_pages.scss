@@ -19,7 +19,7 @@
       }
       font-family: $Lulo-Clean-Outline-Bold;
       color: $color-white;
-      @include font-size(3);
+      @include font-size(2.7);
       text-transform: uppercase;
       margin-top: 11px;
       margin-bottom: 4px;
@@ -28,7 +28,7 @@
       text-transform: uppercase;
       font-weight: 700;
       line-height: 1.6;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       color: $color-white;
       letter-spacing: 5px;
       margin: 7px -5.8% 0 0;
@@ -37,115 +37,120 @@
       }
     }
   }
+  @media (max-width: $screen-xs-max){
+    height: 326px;
+  }
 }
 
 //initiative button
 .initiative-buttons-ounter-container{
   padding: 14px 0 2px;
-  .initiative-buttons-box{
-    margin-bottom:15px;
-    .initiative-buttons-content{
-      margin: 0 10px;
-      min-height: 281px;
-      @media (max-width: $screen-xs-max){
-        margin: 12px 0px;
-      }
-      .initiative_buttons_title{
-        text-transform: uppercase;
-        margin: 0;
-        text-align: center;
-        color: $color-white;
-        @include font-size(3.3);
-        line-height: 66px;
-        background: $color-light-blue;
-        @media (max-width: $screen-sm-max){
-          @include font-size(2.5);
+  .initiative-buttons-inner-container{
+    .initiative-buttons-box{
+      margin-bottom:15px;
+      .initiative-buttons-content{
+        margin: 0 10px;
+        @media (max-width: $screen-xs-min){
+          margin: 23px auto;
+          max-width: 320px;
         }
-      }
-
-      .initiative-buttons-content-inner{
-        position: relative;
-        min-height: 212px;
-        img{
-          padding-top: 20px;
+        .initiative_buttons_title{
+          background-color: $color-green;
+          text-align: center;
+          @include font-size(3.3);
+          line-height: 66px;
+          text-transform: uppercase;
+          margin: 0;
+          color: $color-white;
+          @media (max-width: $screen-sm-max){
+            @include font-size(2.5);
+          }
         }
-        .initiative-button{
-          position: absolute;
-          bottom: 20px;
-          right: 0;
-          -webkit-border-radius: 100%;
-          -moz-border-radius: 100%;
-          border-radius: 100%;
-          background: $color-light-blue;
+        .initiative-buttons-content-inner{
+          padding-top: 10px;
+          position: relative;
           a{
-            &.btn-initiative{
-              i{
-                font-weight: bold;
-                color: white;
-                line-height: inherit;
-                text-align: center;
-              }
+            img{
+
+            }
+          }
+          .initiative-button{
+            position: absolute;
+            bottom: 0px;
+            right: 0;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            border-radius: 100%;
+            background: $color-light-green;
+          }
+        }
+      }
+      &.content-live-healthy{
+        .initiative_buttons_title{
+          background: $color-light-blue;
+        }
+        .initiative-buttons-content-inner{
+          a{
+            img{
+              margin-left: 20px;
+            }
+          }
+          .initiative-button{
+            .btn-initiative{
+              background-color: $color-light-blue;
             }
           }
         }
       }
-    }
-    &:nth-child(2){
-      .initiative_buttons_title{
-        background: $color-grey4;
-      }
-      .initiative-buttons-content-inner{
-        .initiative-button{
-          background:  $color-grey4;
+      &.content-acp{
+        .initiative_buttons_title{
+          background: $color-grey4;
+        }
+        .initiative-buttons-content-inner{
+          a{
+            img{
+              top: 50%;
+              transform: translateY(10%);
+            }
+          }
+          .initiative-button{
+            .btn-initiative{
+              background-color: $color-grey4;
+            }
+          }
         }
       }
-    }
-    &:nth-child(3){
-      .initiative_buttons_title{
-        background: $color-orange;
-      }
-      .initiative-buttons-content-inner{
-        .initiative-button{
+      &.content-gugo{
+        .initiative_buttons_title{
           background: $color-orange;
         }
-      }
-    }
-    &:nth-child(odd){
-      .initiative-buttons-content{
         .initiative-buttons-content-inner{
-          @media (max-width: $screen-sm-max){
-            img{
-              width: 179px;
-            }
-          }
-        }
-      }
-    }
-  }
-  @media screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
-    .col-xs-12{
-      width: 31.278% !important;
-      margin: 0 5px;
-      .initiative-buttons-content{
-        min-height: 220px;
-        .initiative_buttons_title{
-          font-size: 1.8rem;
-        }
-        .initiative-buttons-content-inner{
-          min-height: 158px;
           a{
             img{
-
+              margin-left: 20px;
+            }
+          }
+          .initiative-button{
+            .btn-initiative{
+              background-color: $color-orange;
             }
           }
         }
       }
-      &:nth-child(odd){
-        .initiative-buttons-content{
-          .initiative-buttons-content-inner{
-            @media (max-width: $screen-sm-max){
-              img{
-                width: 112px;
+    }
+    @media screen and (min-width: $screen-xs-min) and (max-width: $screen-xs-max){
+      .col-xs-12{
+        width: 33.3333333333%;
+        &.initiative-buttons-box{
+          .initiative-buttons-content{
+            .initiative_buttons_title{
+              @include font-size(1.5);
+              line-height: 44px;
+            }
+            .initiative-buttons-content-inner{
+              min-height: initial;
+              .initiative-button{
+                bottom: 0;
               }
             }
           }

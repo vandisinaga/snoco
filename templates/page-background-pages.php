@@ -1,6 +1,6 @@
 <?php
 $style = '';
-$page_background = get_field('home_page_background');
+$page_background = get_field('page_background');
 $home_page_background = get_field('home_page_background', 'option');
 if(strlen($page_background['url']) > 0)
 {
@@ -21,7 +21,7 @@ else{
         </div>
         <div class="container">
             <div class="home-page-background-caption">
-                <p>Advace Care Planning</p>
+                <p>Advance Care Planning</p>
             </div>
 
         <?php } elseif( is_page_template('template-gugo.php' )|| is_page_template('template-gugo-news.php' )) {?>
@@ -45,20 +45,23 @@ else{
             <div class="home-page-background-caption">
                 <p>Live Healthy 2020</p>
             </div>
+        <?php } else {?>
+            <div class="container">
+                <div class="home-page-background-caption">
+                    <?php
+                    $page_background_caption = get_field('page_background_caption');
+                    ?>
+                    <?php if(strlen($page_background_caption) > 0): ?>
+                        <?php echo $page_background_caption; ?>
+                    <?php endif; ?>
+                </div>
         <?php }?>
-
-
-
-
-
-
     <?php
     $donate_us = get_field('donate_us');
     ?>
     <a href="<?php echo $donate_us ?>" class="btn btn-donate">Donate <span>Here</span></a>
     <div class="clearfix"></div>
     </div>
-
 </div>
 
 
