@@ -19,11 +19,17 @@
         padding-top: 11px;
         padding-bottom: 5px;
         letter-spacing: 2.9px;
+        @media (max-width: $screen-xs-max){
+          @include font-size(1.6);
+        }
       }
     }
     .btn-donate{
       background-color: $color-orange-opacity;
       bottom: 81px;
+      @media (max-width: $screen-xs-max){
+        bottom: 50px;
+      }
     }
   }
   .second-menu-container{
@@ -99,11 +105,17 @@
         padding-top: 11px;
         padding-bottom: 5px;
         letter-spacing: 2.9px;
+        @media (max-width: $screen-xs-max){
+          @include font-size(1.6);
+        }
       }
     }
     .btn-donate{
       background-color: $color-grey-green-opacity;
       bottom: 81px;
+      @media (max-width: $screen-xs-max){
+        bottom: 50px;
+      }
     }
   }
   .second-menu-container{
@@ -176,11 +188,17 @@
         padding-top: 11px;
         padding-bottom: 5px;
         letter-spacing: 2.9px;
+        @media (max-width: $screen-xs-max){
+          @include font-size(1.6);
+        }
       }
     }
     .btn-donate{
       background-color: $color-light-blue-opacity;
       bottom: 81px;
+      @media (max-width: $screen-xs-max){
+        bottom: 50px;
+      }
     }
   }
 
@@ -276,6 +294,9 @@
   .services-container{
     .services-image{
       padding: 15px 18px 0;
+      img{
+        margin: auto;
+      }
     }
   }
   
@@ -295,7 +316,7 @@
               position: absolute;
               top: -56px;
               right: 0;
-              @media (max-width: $screen-sm-min){
+              @media (max-width: $screen-sm-max){
                 display: none;
               }
             }
@@ -305,8 +326,8 @@
               min-height: 51.63px;
               position: absolute;
               top: 0;
-              right: -60px;
-              @media (max-width: $screen-xs-min){
+              right: -56px;
+              @media (max-width: $screen-sm-max){
                 display: none;
               }
             }
