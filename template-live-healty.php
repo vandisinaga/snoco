@@ -28,8 +28,10 @@ $the_title = get_field('content_title');
     <?php if(strlen($how_it_works_image['title']) > 0): ?>
         <div class="live-healthy-outer-container">
             <div class="live-healthy-inner-container">
-                <div class="poster-image">
-                    <img src="<?php echo $how_it_works_image['url']?>" alt="<?php echo $how_it_works_image['title']?>" class="img-responsive">
+                <div class="services-container">
+                    <div class="services-image">
+                        <img src="<?php echo $how_it_works_image['url']?>" alt="<?php echo $how_it_works_image['title']?>" class="img-responsive">
+                    </div>
                 </div>
             </div>
             <div class="clearfix"></div>

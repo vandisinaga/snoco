@@ -86,17 +86,6 @@
     }
   }
   .home-page-background{
-    .border-triangle{
-      img{
-        width: 242px;
-        @media (max-width: $screen-xs-max){
-          position: absolute;
-          top: 5px;
-          width: 129px;
-          left: 2px;
-        }
-      }
-    }
     .home-page-background-caption{
       position: absolute;
       bottom: 0;

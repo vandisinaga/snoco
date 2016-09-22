@@ -5,10 +5,11 @@
   background: url("../images/arrow.png") no-repeat center;
   min-width: 51.63px;
   min-height: 51.63px;
-  @media (max-width: $screen-xs-max){
-    background: url(../images/arrow.png) no-repeat 0;
-    min-width: 39px;
-    min-height: 39px;
+  @media (min-width: $screen-xs-min) and(max-width: $screen-xs-max){
+    background: url(../images/arrow.png) no-repeat 3px;
+    min-width: 33px;
+    min-height: 33px;
+    background-size: 25px 23px;
   }
 
 }
