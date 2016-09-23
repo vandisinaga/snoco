@@ -19,7 +19,6 @@ if(strlen($about_section_background['url']) > 0)
             <?php if(strlen($about_section) > 0): ?>
                 <?php echo $about_section; ?>
             <?php endif; ?>
-
         </div>
     </div>
 </div>

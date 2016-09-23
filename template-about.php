@@ -179,7 +179,7 @@
             </div>
             <?php if($a%2 ==1 && $a>=1): ?>
                 <div class="clearfix visible-xs"></div>
-            <?php elseif($a%2 ==0 && $a>=2):?>
+            <?php elseif($a%3 ==0 && $a>=2):?>
                 <div class="clearfix hidden-xs"></div>
         <?php endif ?>
         <?php endforeach; ?>

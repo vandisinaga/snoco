@@ -7,9 +7,9 @@
   min-height: 51.63px;
   @media (min-width: $screen-xs-min) and(max-width: $screen-xs-max){
     background: url(../images/arrow.png) no-repeat 3px;
-    min-width: 33px;
-    min-height: 33px;
-    background-size: 25px 23px;
+    min-width: 40px;
+    min-height: 40px;
+    background-size: 34px 23px;
   }
 
 }
@@ -48,6 +48,10 @@
       font-size: 1.14rem;
       margin-top: -6px;
     }
+  }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+    width: 130px;
+    height: 130px;
   }
   @media (min-width: $screen-lg-min){
     right: 14%;

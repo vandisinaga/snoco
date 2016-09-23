@@ -11,10 +11,13 @@
   position: relative;
   .home-page-background-caption{
     top: 50%;
-    transform: translateY(8%);
-    padding: 0 5.3%;
+    transform: translateY(10%);
+    padding: 0 15%;
     h1{
-      @media (min-width: $screen-sm-min){
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+        @include font-size(3.5);
+      }
+      @media (min-width: $screen-md-min){
         @include font-size(5.5);
       }
       font-family: $Lulo-Clean-Outline-Bold;
@@ -32,10 +35,16 @@
       color: $color-white;
       letter-spacing: 5px;
       margin: 7px -5.8% 0 0;
-      @media (min-width: $screen-sm-min){
-        font-size: 3.5rem;
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+        @include font-size(2);
+      }
+      @media (min-width: $screen-md-min){
+        font-size: 3.8rem;
       }
     }
+  }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+    height: 327px;
   }
   @media (max-width: $screen-xs-max){
     height: 250px;
@@ -44,15 +53,13 @@
 
 //initiative button
 .initiative-buttons-ounter-container{
-  padding: 14px 0 14px;
   .initiative-buttons-inner-container{
     .initiative-buttons-box{
-      margin-bottom:15px;
       .initiative-buttons-content{
-        margin: 0 10px;
-        @media (max-width: $screen-xs-min){
-          margin: 15px auto;
-          max-width: 316px;
+        margin: 50px 16px 50px 19px;
+        background-color: $color-light-grey4;
+        @media (min-width: $screen-xs-max) and (max-width: $screen-sm-max){
+          height: 232px;
         }
         .initiative_buttons_title{
           background-color: $color-green;
@@ -60,49 +67,82 @@
           @include font-size(3.3);
           line-height: 66px;
           text-transform: uppercase;
-          margin: 0;
           color: $color-white;
+          margin: 0;
           @media (max-width: $screen-sm-max){
             @include font-size(2.5);
           }
         }
         .initiative-buttons-content-inner{
-          padding-top: 10px;
+
           position: relative;
           a{
             img{
-
-            }
-          }
-          .initiative-button{
-            position: absolute;
-            bottom: 0px;
-            right: 0;
-            -webkit-border-radius: 100%;
-            -moz-border-radius: 100%;
-            border-radius: 100%;
-            background: $color-light-green;
-          }
-        }
-      }
-      &.content-live-healthy{
-        .initiative_buttons_title{
-          background: $color-light-blue;
-        }
-        .initiative-buttons-content-inner{
-          a{
-            img{
-              padding-left: 20px;
-              @media (min-width: $screen-xs-min){
-                margin-left: 20px;
-                padding-left:0;
+              top: 20%;
+              margin: auto;
+              transform: translateY(13%);
+              @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+                max-width: 116px;
+                margin: inherit;
+                margin-left: 19px;
               }
             }
           }
           .initiative-button{
-            .btn-initiative{
-              background-color: $color-light-blue;
+            position: absolute;
+            bottom: 35px;
+            right: 40px;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            border-radius: 100%;
+            background: $color-light-green;
+            @media (max-width: $screen-sm-max){
+              bottom: -20px;
+              right: 20px;
             }
+            @media (max-width: $screen-xs-max){
+              bottom: 14px;
+            }
+          }
+          @media (max-width: $screen-xss-max){
+            height: 308px;
+          }
+          @media (min-width: $screen-xs-min){
+            height: 158px;
+          }
+          @media (min-width: $screen-xs-max){
+            height: 129px;
+          }
+          @media (min-width: $screen-md-min){
+            height: 278px;
+          }
+        }
+      }
+      &.content-live-healthy{
+        .initiative-buttons-content{
+          .initiative_buttons_title{
+            background: $color-light-blue;
+          }
+          .initiative-buttons-content-inner{
+            a{
+              img{
+                @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+                  width: 160px;
+                }
+                @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max){
+                  width: 85px;
+                }
+              }
+            }
+            .initiative-button{
+              .btn-initiative{
+                background-color: $color-light-blue;
+              }
+            }
+          }
+          @media (min-width: $screen-sm-min){
+            margin-left: 0;
+            margin-right: 35px;
           }
         }
       }
@@ -113,8 +153,17 @@
         .initiative-buttons-content-inner{
           a{
             img{
-              top: 50%;
-              transform: translateY(10%);
+              transform: translateY(0);
+              @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+                max-width: 100%;
+                margin: inherit;
+                margin-left: 0;
+              }
+              @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max){
+                width: 196px;
+                margin: inherit;
+                margin-left: 0px;
+              }
             }
           }
           .initiative-button{
@@ -125,23 +174,30 @@
         }
       }
       &.content-gugo{
-        .initiative_buttons_title{
-          background: $color-orange;
-        }
-        .initiative-buttons-content-inner{
-          a{
-            img{
-              padding-left: 20px;
-              @media (min-width: $screen-xs-min){
-                margin-left: 20px;
-                padding-left:0;
+        .initiative-buttons-content{
+          .initiative_buttons_title{
+            background: $color-orange;
+          }
+          .initiative-buttons-content-inner{
+            a{
+              img{
+                @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+                  width: 160px;
+                }
+                @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max){
+                  width: 85px;
+                }
+              }
+            }
+            .initiative-button{
+              .btn-initiative{
+                background-color: $color-orange;
               }
             }
           }
-          .initiative-button{
-            .btn-initiative{
-              background-color: $color-orange;
-            }
+          @media (min-width: $screen-sm-min) {
+            margin-right: 0;
+            margin-left: 35px;
           }
         }
       }
@@ -154,12 +210,6 @@
             .initiative_buttons_title{
               @include font-size(1.5);
               line-height: 44px;
-            }
-            .initiative-buttons-content-inner{
-              min-height: initial;
-              .initiative-button{
-                bottom: 0;
-              }
             }
           }
         }
@@ -216,9 +266,26 @@
 //social-icon
 .social-media{
   float: right;
-  margin: 0 6px 8px 0;
+  margin: 10px 0 20px;
   a{
     display: inline-block;
+    font-size: 2.8rem;
+    color: $color-white;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 25px;
+    &.icon-instagram{
+      background-color: $color-light-blue3;
+    }
+    &.icon-twitter{
+      background-color: $color-light-blue4;
+    }
+    &.icon-facebook{
+      background-color: $color-dark-blue2;
+    }
   }
 }
 
@@ -525,4 +592,33 @@
   .nav-next{
     float: right;
   }
+}
+
+//placeholder
+::-webkit-input-placeholder {
+  color: $color-light-grey3;
+  font-family: $MuseoSans700;
+  font-size: 1.8rem;
+  letter-spacing: 2.1px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: $color-light-grey3;
+  font-family: $MuseoSans700;
+  font-size: 1.8rem;
+  letter-spacing: 2.1px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: $color-light-grey3;
+  font-family: $MuseoSans700;
+  font-size: 1.8rem;
+  letter-spacing: 2.1px;
+}
+
+:-ms-input-placeholder {
+  color: $color-light-grey3;
+  font-family: $MuseoSans700;
+  font-size: 1.8rem;
+  letter-spacing: 2.1px;
 }
