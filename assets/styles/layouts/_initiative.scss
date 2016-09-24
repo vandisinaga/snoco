@@ -15,12 +15,22 @@
       top:auto;
       p{
         margin: auto;
-        width: 844px;
+        width: 1188px;
         padding-top: 11px;
         padding-bottom: 5px;
         letter-spacing: 2.9px;
         @media (max-width: $screen-xs-max){
           @include font-size(1.6);
+        }
+      }
+    }
+    .border-triangle{
+      img{
+        @media (max-width: $screen-xs-max){
+          position: absolute;
+          top: 5px;
+          width: 50px;
+          left: 5px;
         }
       }
     }
@@ -101,7 +111,7 @@
       top:auto;
       p{
         margin: auto;
-        width: 844px;
+        width: 1188px;
         padding-top: 11px;
         padding-bottom: 5px;
         letter-spacing: 2.9px;
@@ -184,12 +194,22 @@
       top:auto;
       p{
         margin: auto;
-        width: 844px;
+        width: 1188px;
         padding-top: 11px;
         padding-bottom: 5px;
         letter-spacing: 2.9px;
         @media (max-width: $screen-xs-max){
           @include font-size(1.6);
+        }
+      }
+    }
+    .border-triangle{
+      img{
+        @media (max-width: $screen-xs-max){
+          position: absolute;
+          top: 5px;
+          width: 50px;
+          left: 5px;
         }
       }
     }

@@ -279,12 +279,21 @@
     margin-left: 25px;
     &.icon-instagram{
       background-color: $color-light-blue3;
+      &:hover,&:focus{
+        background-color: $color-light-blue3-hover;
+      }
     }
     &.icon-twitter{
       background-color: $color-light-blue4;
+      &:hover,&:focus {
+        background-color: $color-light-blue4-hover;
+      }
     }
     &.icon-facebook{
       background-color: $color-dark-blue2;
+      &:hover,&:focus {
+        background-color: $color-dark-blue2-hover;
+      }
     }
   }
 }
@@ -299,7 +308,7 @@
     position: absolute;
     top: 36px;
     left: 12px;
-    width: 181px;
+    width: 157px;
     @media (max-width: $screen-xs-max){
       position: absolute;
       top: 5px;
@@ -415,11 +424,20 @@
 .ngg-albumoverview{
   .ngg-album-compact{
     margin-bottom: 25px!important;
+    margin-right: 15px !important;
+    float: none;
+    display: inline-block;
     .ngg-album-compactbox{
       .ngg-album-link{
         .Link{
           img{
 
+              width: 323px;
+
+
+            @media (max-width: $screen-xs-max){
+              width: 286px;
+            }
           }
         }
       }
@@ -444,6 +462,9 @@
           font-size: 1.1rem;
         }
       }
+    }
+    @media (max-width: $screen-xs-max){
+      padding: 0!important;
     }
   }
 }
@@ -565,24 +586,7 @@
   }
 }
 
-.ngg-albumoverview{
-  .ngg-album-compact{
-    @media (max-width: $screen-xs-max){
-      padding: 0!important;
-    }
-    .ngg-album-compactbox{
-      .ngg-album-link{
-        .Link{
-          img{
-            @media (max-width: $screen-xs-max){
-              width: 286px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+
 
 //pagination
 .nav-links{

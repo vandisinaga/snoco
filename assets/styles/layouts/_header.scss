@@ -18,6 +18,7 @@ header{
             width: 395px;
             height: auto;
             margin-left: 2px;
+            margin-top: 10px;
             @media (min-width: $screen-sm-min)and (max-width: $screen-md-max){
               margin-left: -18px;
             }
@@ -68,12 +69,13 @@ header{
     background-color: $color-light-grey3;
     .nav-primary{
       min-height: 0;
-      margin:  0;
+      margin:  0 0 2px 0 ;
       .navbar-header{
         @media (min-width: $screen-sm-min){
           float: none;
         }
         .navbar-toggle{
+          margin-right: 0;
           .icon-bar{
             background-color: $color-green;
           }
@@ -103,6 +105,24 @@ header{
                       display: block;
                     }
                   }
+                  //&.menu-item-has-children{
+                  //  a{
+                  //    &::after{
+                  //      content: '\f055';
+                  //      font-family: FontAwesome;
+                  //      font-weight: normal;
+                  //      font-style: normal;
+                  //      float: right;
+                  //    }
+                  //    &::before{
+                  //      content: '\f056;';
+                  //      font-family: FontAwesome;
+                  //      font-weight: normal;
+                  //      font-style: normal;
+                  //      float: right;
+                  //    }
+                  //  }
+                  //}
                 }
               }
               @media (min-width: $screen-sm-min) {
@@ -110,7 +130,7 @@ header{
                   width: 16.167%;
                   display: inline-block;
                   text-align: center;
-                  line-height: 70px;
+                  line-height: 68px;
                   &:hover,
                   &:focus{
                     >a{

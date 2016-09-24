@@ -20,7 +20,7 @@
         <?php
         $steering_committee_members = get_field('steering_committee_members');
         if($steering_committee_members):
-        $i=0;
+        $i=1;
         foreach($steering_committee_members as $list):
             $image = $list['image'];
 
@@ -86,9 +86,9 @@
                     </div>
                 </div>
             </div>
-            <?php if($a%2 ==1 && $a>=1): ?>
+            <?php if($a%2 ==0 && $a>=2): ?>
                 <div class="clearfix visible-xs"></div>
-            <?php elseif($a%2 ==0 && $a>=2):?>
+            <?php elseif($a%3 ==0 && $a>=3 ):?>
                 <div class="clearfix hidden-xs"></div>
             <?php endif ?>
         <?php endforeach; ?>
@@ -111,7 +111,7 @@
     <?php
     $leadership_coalition_members = get_field('leadership_coalition_members');
     if($leadership_coalition_members):
-        $i=0;
+        $i=1;
         foreach($leadership_coalition_members as $list):
             $image = $list['image'];
 
@@ -177,10 +177,11 @@
                     </div>
                 </div>
             </div>
-            <?php if($a%2 ==1 && $a>=1): ?>
+            <?php if($a%2 ==0 && $a>=2): ?>
                 <div class="clearfix visible-xs"></div>
-            <?php elseif($a%3 ==0 && $a>=2):?>
+            <?php elseif($a%3 ==0 && $a>=3 ):?>
                 <div class="clearfix hidden-xs"></div>
+
         <?php endif ?>
         <?php endforeach; ?>
         <div class="clearfix"></div>

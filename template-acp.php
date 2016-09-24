@@ -53,30 +53,5 @@ $the_title = get_field('content_title');
   <?php endif; ?>
 </div>
 
-<div class="social-media">
-  <?php
-  $box_link = get_field('acp_social_media','option');
-  if($box_link):
-    $i=0;
-    foreach($box_link as $list):
-      $image = $list['acp_social_media_image'];
-
-      $image_source = '';
-      $image_title = '';
-
-      if(strlen($image['url']) > 0)
-      {
-        $image_source = $image['url'];
-        $image_title = $image['title'];
-      }
-
-      $box_link_url = $list['acp_social_media_url'];
-      ?>
-      <a href="<?php echo $box_link_url ?>">
-        <img src="<?php echo $image_source ?>" alt="<?php echo $image_title ?>" class="img-responsive"/>
-      </a>
-    <?php endforeach; ?>
-    <div class="clearfix"></div>
-  <?php endif; ?>
-</div>
+<?php get_template_part('templates/social-media'); ?>
 

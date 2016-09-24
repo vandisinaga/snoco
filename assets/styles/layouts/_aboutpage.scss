@@ -5,12 +5,14 @@
     padding-left: 3px;
     .commitee-members-outers{
       .commitee-members{
-        width: 197px;
+        width: 240px;
         margin: auto;
         .committee-member-image{
           img{
             cursor: pointer;
-            @media (max-width: $screen-xs-max){
+            height: 237px;
+            margin: auto;
+            @media (max-width: $screen-xs-min){
               margin: auto;
               max-width: 78%;
               height: 122px;
