@@ -29,36 +29,13 @@ use Roots\Sage\Wrapper;
         <?php get_template_part('templates/page-background-pages'); ?>
         <?php global $post;?>
 
-        <div class="second-menu-container">
-            <div class="container">
-                <div class="second-menu">
-                    <nav class="navbar nav-primary">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#second-menu" aria-expanded="false" aria-controls="navbar">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar "></span>
-                            </button>
-                            <div id="second-menu" class="collapse navbar-collapse">
-
-                                <!--if page is advance-care-planning or child page from advance-care-planning-->
-                                <?php if ( is_page_template('template-acp.php' )|| is_page_template('template-acp-news.php' )) {
-                                    wp_nav_menu('menu= Advanced Care Planning');?>
-
-                                <?php } elseif( is_page_template('template-gugo.php' )|| is_page_template('template-gugo-news.php' )) {
-                                   wp_nav_menu('menu= Gear Up Go'); ?>
-
-                                <?php } elseif( is_page_template('template-live-healty.php' )) {
-                                    wp_nav_menu('menu= Live Healthy 2020');
-                                }?>
-                            </div><!--/.nav-collapse -->
-                        </div>
-                        <div class="clearfix"></div>
-                    </nav>
-                </div>
-            </div>
-        </div>
+        <?php if ( is_page_template('template-acp.php' )|| is_page_template('template-acp-news.php' )) {?>
+            <?php get_template_part('templates/menu-acp'); ?>
+        <?php } elseif( is_page_template('template-gugo.php' )|| is_page_template('template-gugo-news.php' )) {?>
+            <?php get_template_part('templates/menu-gugo'); ?>
+        <?php } elseif( is_page_template('template-live-healty.php' )) {?>
+            <?php get_template_part('templates/menu-livehealth'); ?>
+        <?php }?>
     <?php endif ?>
 
     <div class="wrap container" role="document">

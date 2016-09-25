@@ -246,7 +246,7 @@
 .box-link-container{
   .box-link-inner-container{
     .box-menu-image{
-      margin: 10px auto;
+      margin: 10px 5px;
       display: table;
       @media (max-width: $screen-xs-max){
         margin: 5px;
@@ -424,17 +424,16 @@
 .ngg-albumoverview{
   .ngg-album-compact{
     margin-bottom: 25px!important;
-    margin-right: 15px !important;
     float: none;
     display: inline-block;
+    @media (min-width: $screen-xs-min){
+      width: 49%;
+    }
     .ngg-album-compactbox{
       .ngg-album-link{
         .Link{
           img{
-
-              width: 323px;
-
-
+              width: 100%;
             @media (max-width: $screen-xs-max){
               width: 286px;
             }
@@ -465,6 +464,21 @@
     }
     @media (max-width: $screen-xs-max){
       padding: 0!important;
+    }
+  }
+}
+
+.ngg-galleryoverview{
+  .ngg-gallery-thumbnail-box{
+    width:33.333%;
+    .ngg-gallery-thumbnail{
+      margin-top: 15px;
+      margin-top: 15px;
+      a{
+        img{
+          width: 100%;
+        }
+      }
     }
   }
 }
