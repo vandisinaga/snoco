@@ -86,10 +86,12 @@
                     </div>
                 </div>
             </div>
-            <?php if($a%2 ==0 && $a>=2): ?>
-                <div class="clearfix visible-xs"></div>
+            <?php if($a%6 ==0 && $a>=6): ?>
+                <div class="clearfix"></div>
             <?php elseif($a%3 ==0 && $a>=3 ):?>
                 <div class="clearfix hidden-xs"></div>
+            <?php elseif($a%2 ==0 && $a>=2 ):?>
+            <div class="clearfix visible-xs"></div>
             <?php endif ?>
         <?php endforeach; ?>
         <div class="clearfix"></div>
@@ -177,11 +179,12 @@
                     </div>
                 </div>
             </div>
-            <?php if($a%2 ==0 && $a>=2): ?>
-                <div class="clearfix visible-xs"></div>
-            <?php elseif($a%3 ==0 && $a>=3 ):?>
-                <div class="clearfix hidden-xs"></div>
-
+            <?php if($a%6 ==0 && $a>=6): ?>
+            <div class="clearfix"></div>
+        <?php elseif($a%3 ==0 && $a>=3 ):?>
+            <div class="clearfix hidden-xs"></div>
+        <?php elseif($a%2 ==0 && $a>=2 ):?>
+            <div class="clearfix visible-xs"></div>
         <?php endif ?>
         <?php endforeach; ?>
         <div class="clearfix"></div>
