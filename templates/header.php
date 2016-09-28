@@ -4,9 +4,6 @@
     <div class="container-fluid">
       <div class="header-top-container">
         <div class="container">
-
-          <?php get_template_part('templates/social-media'); ?>
-
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div class="row">
               <div class="header-logo">

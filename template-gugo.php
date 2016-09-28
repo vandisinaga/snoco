@@ -54,7 +54,6 @@ $the_title = get_field('content_title');
   <?php endif; ?>
 </div>
 
-<?php get_template_part('templates/social-media'); ?>
 
 
 

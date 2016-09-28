@@ -52,7 +52,7 @@ while ($query->have_posts()) : $query->the_post(); ?>
   <?php endif; ?>
 </div>
 
-<?php get_template_part('templates/social-media'); ?>
+
 
 
 

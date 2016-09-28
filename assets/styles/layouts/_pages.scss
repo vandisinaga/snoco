@@ -1,3 +1,9 @@
+main.main{
+  >.row{
+    margin:0;
+  }
+}
+
 //big-background
 .home-page-background{
   background-position: 50%;
@@ -69,6 +75,7 @@
           text-transform: uppercase;
           color: $color-white;
           margin: 0;
+          font-weight:600;
           @media (max-width: $screen-sm-max){
             @include font-size(2.5);
           }
@@ -248,7 +255,9 @@
   .box-link-inner-container{
     .box-menu-image{
       margin: 10px 5px;
-      display: table;
+      img{
+        margin: auto;
+      }
       @media (max-width: $screen-xs-max){
         margin: 5px;
       }

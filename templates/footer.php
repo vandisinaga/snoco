@@ -1,6 +1,7 @@
 <footer class="">
   <div class="footer-bottom-outer">
     <div class="container">
+        <?php get_template_part('templates/social-media'); ?>
         <div class="footer-container">
           <div class="footer-title">
             <h1 class="title">

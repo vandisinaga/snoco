@@ -51,7 +51,7 @@
   <?php endif; ?>
 </div>
 
-<?php get_template_part('templates/social-media'); ?>
+
 
 
 

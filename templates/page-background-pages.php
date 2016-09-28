@@ -19,8 +19,8 @@ else{
         <div class="border-triangle">
             <img src="<?php echo $initiative_buttons_middle_image['url']?>" alt="<?php echo $initiative_buttons_middle_image['title']?>">
         </div>
-        <div class="container">
             <div class="home-page-background-caption">
+                <div class="container">
                 <p>Advance Care Planning</p>
             </div>
 
@@ -32,6 +32,7 @@ else{
                 <img src="<?php echo $initiative_buttons_right_image['url']?>" alt="<?php echo $initiative_buttons_right_image['title']?>">
             </div>
             <div class="home-page-background-caption">
+                <div class="container">
                 <p>Gear Up and Go!</p>
             </div>
 
@@ -43,6 +44,7 @@ else{
                 <img src="<?php echo $initiative_buttons_left_image['url']?>" alt="<?php echo $initiative_buttons_left_image['title']?>">
             </div>
             <div class="home-page-background-caption">
+                <div class="container">
                 <p>Live Healthy 2020</p>
             </div>
         <?php } else {?>

@@ -3,9 +3,13 @@ footer{
   color: #FFFFFF;
   text-align: right;
   padding: 15px 0;
+  margin-top:10px;
   .footer-bottom-outer{
+    .social-media {
+      margin: 10px 0;
+    }
     .footer-container{
-      padding: 0 1%;
+      padding: 0;
       .footer-title{
         h1{
           text-transform: uppercase;
