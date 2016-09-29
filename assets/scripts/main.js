@@ -39,6 +39,12 @@
             $('.modal:visible').each(reposition);
           });
         });
+        // funtion collapse li navbar
+        $('<i class="fa fa-plus-circle toogle-icon visible-xs"></i>')
+            .click(function(){
+              $(this).parent().find(".sub-menu").slideToggle();
+            })
+            .prependTo(".menu-item-has-children");
       }
     },
     // Home page

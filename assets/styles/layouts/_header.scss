@@ -91,12 +91,21 @@ header{
               margin-bottom: -2px;
               @media (max-width: $screen-xs-max){
                 li{
+                  .toogle-icon{
+                    color: $color-dark-green;
+                    margin-top: 3px;
+                    position: absolute;
+                    right: 6px;
+                    z-index: 999;
+                    font-size: 2rem;
+                  }
                   a{
                     border-bottom: solid thin $color-green;
                     @include font-size(1.2);
                     padding: 5px 0px;
                   }
                   .sub-menu{
+                    display: none;
                     list-style: none;
                     padding: 0;
                     a{
