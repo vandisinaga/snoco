@@ -85,6 +85,20 @@
       }
     }
   }
+
+  footer{
+    .footer-bottom-outer{
+      .social-media-container{
+        .social-media{
+          .icon-instagram,
+          .icon-facebook,
+          .icon-twitter{
+            background-color: $color-orange;
+          }
+        }
+      }
+    }
+  }
 }
 
 //ACP SECTION
@@ -101,6 +115,7 @@
         @media (min-width: $screen-sm-max){
           width: 265px;
           top:0;
+          left: 0;
         }
       }
     }
@@ -169,6 +184,19 @@
 
         p{
 
+        }
+      }
+    }
+  }
+  footer{
+    .footer-bottom-outer{
+      .social-media-container{
+        .social-media{
+          .icon-instagram,
+          .icon-facebook,
+          .icon-twitter{
+            background: $color-dark-blue;
+          }
         }
       }
     }
@@ -344,6 +372,19 @@
                 display: none;
               }
             }
+          }
+        }
+      }
+    }
+  }
+  footer{
+    .footer-bottom-outer{
+      .social-media-container{
+        .social-media{
+          .icon-instagram,
+          .icon-facebook,
+          .icon-twitter{
+            background: $color-light-blue;
           }
         }
       }

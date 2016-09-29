@@ -1,6 +1,6 @@
 header{
   .header-top-outer{
-    margin: 10px 0;
+    padding: 10px 0;
     .header-top-container{
       .social-media{
         margin-top: -17px;
@@ -24,42 +24,7 @@ header{
         }
       }
       .search-form-container{
-        margin-top: 23px;
-        form{
-          margin-right: -6px;
-          label{
-            input{
-              -webkit-border-radius: 0;
-              -moz-border-radius: 0;
-              border-radius: 0;
-              height: 46px;
-              width: 274px;
-              border: solid 1px $color-dark-grey;
-              margin-right: -4px;
-            }
-          }
-          button[type="submit"]{
-            vertical-align: top;
-            -webkit-border-radius: 0;
-            -moz-border-radius: 0;
-            border-radius: 0;
-            padding: 6px 12px 7px;
-            width: 61px;
-            background: $color-green;
-            height: 46px;
-            color: #FFFFFF;
-            border-color: $color-green;
-            text-transform: uppercase;
-            @include font-size(2.3);
-            letter-spacing: 1px;
-            &:hover{
-              background-color: $color-light-green;
-            }
-          }
-          @media (min-width: $screen-md-min){
-            margin-right: -7px;
-          }
-        }
+
       }
     }
   }
@@ -178,7 +143,7 @@ header{
                         display: block;
                         font-size: 2.2rem;
                         text-transform: capitalize;
-                        line-height: 79px;
+                        line-height: 60px;
                         padding: 0 0 0 10%;
                         position: relative;
                         &::before{
@@ -204,7 +169,7 @@ header{
               @media (min-width: $screen-sm-max){
                 li{
                   display: inline-block;
-                  width: 16.3%;
+                  width: 16.2%;
                 }
               }
               a{

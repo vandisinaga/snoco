@@ -22,7 +22,7 @@
           </div>
           <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
             <div class="row">
-              <div class="search-form-container pull-right">
+              <div class="pull-right">
                 <?php get_search_form(); ?>
               </div>
               <div class="clearfix"></div>
