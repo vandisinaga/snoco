@@ -1,7 +1,6 @@
 header{
   .header-top-outer{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 10px 0;
     .header-top-container{
       .social-media{
         margin-top: -17px;
@@ -138,7 +137,7 @@ header{
                   width: 16.167%;
                   display: inline-block;
                   text-align: center;
-                  line-height: 68px;
+                  line-height: 58px;
                   &:hover,
                   &:focus{
                     >a{

@@ -9,7 +9,7 @@ main.main{
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 464px;
+  min-height: 340px;
   overflow: hidden;
   -moz-box-shadow: inset 0 0 150px #000000;
   -webkit-box-shadow: inset 0 0 150px #000000;
@@ -24,7 +24,7 @@ main.main{
         @include font-size(3.5);
       }
       @media (min-width: $screen-md-min){
-        @include font-size(5.5);
+        @include font-size(4.5);
       }
       font-family: $Lulo-Clean-Outline-Bold;
       color: $color-white;
@@ -45,7 +45,7 @@ main.main{
         @include font-size(2);
       }
       @media (min-width: $screen-md-min){
-        font-size: 3.8rem;
+        font-size: 3.3rem;
       }
     }
   }
@@ -62,7 +62,7 @@ main.main{
   .initiative-buttons-inner-container{
     .initiative-buttons-box{
       .initiative-buttons-content{
-        margin: 50px 16px 50px 19px;
+        margin: 30px 16px 30px 19px;
         background-color: $color-light-grey4;
         @media (min-width: $screen-xs-max) and (max-width: $screen-sm-max){
           height: 232px;
@@ -257,6 +257,9 @@ main.main{
       margin: 10px 5px;
       img{
         margin: auto;
+        @media (min-width: $screen-lg-min){
+          width: 85%;
+        }
       }
       @media (max-width: $screen-xs-max){
         margin: 5px;

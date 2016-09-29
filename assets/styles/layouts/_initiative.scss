@@ -6,25 +6,6 @@
     }
   }
   .home-page-background{
-    .home-page-background-caption{
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: $color-light-green;
-      top:auto;
-      padding:0;
-      p{
-        margin: auto;
-        padding-top: 11px;
-        padding-bottom: 5px;
-        letter-spacing: 2.9px;
-        margin-left: 25px;
-        @media (max-width: $screen-xs-max){
-          @include font-size(1.4);
-        }
-      }
-    }
     .border-triangle{
       img{
         @media (max-width: $screen-xs-max){
@@ -37,9 +18,23 @@
     }
     .btn-donate{
       background-color: $color-orange-opacity;
-      bottom: 81px;
+    }
+  }
+  .home-page-background-caption{
+    background: $color-light-green;
+    padding:0;
+    p{
+      color: $color-white;
+      @include font-size(3);
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: auto;
+      padding-top: 15px;
+      padding-bottom: 5px;
+      letter-spacing: 2.9px;
+      margin-left: 25px;
       @media (max-width: $screen-xs-max){
-        bottom: 50px;
+        @include font-size(1.4);
       }
     }
   }
@@ -109,30 +104,25 @@
         }
       }
     }
-    .home-page-background-caption{
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: $color-dark-blue;
-      top:auto;
-      padding:0;
-      p{
-        margin: auto;
-        padding-top: 11px;
-        padding-bottom: 5px;
-        margin-left: 25px;
-        letter-spacing: 2.9px;
-        @media (max-width: $screen-xs-max){
-          @include font-size(1.4);
-        }
-      }
-    }
     .btn-donate{
       background-color: $color-grey-green-opacity;
-      bottom: 81px;
+    }
+  }
+  .home-page-background-caption{
+    background: $color-dark-blue;
+    padding:0;
+    p{
+      color: $color-white;
+      @include font-size(3);
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: auto;
+      padding-top: 15px;
+      padding-bottom: 5px;
+      margin-left: 25px;
+      letter-spacing: 2.9px;
       @media (max-width: $screen-xs-max){
-        bottom: 50px;
+        @include font-size(1.4);
       }
     }
   }
@@ -191,25 +181,6 @@
     padding: 35px 5px 0;
   }
   .home-page-background{
-    .home-page-background-caption{
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: $color-light-blue;
-      top:auto;
-      padding:0;
-      p{
-        margin: auto;
-        padding-top: 11px;
-        padding-bottom: 5px;
-        letter-spacing: 2.9px;
-        margin-left: 25px;
-        @media (max-width: $screen-xs-max){
-          @include font-size(1.4);
-        }
-      }
-    }
     .border-triangle{
       img{
         @media (max-width: $screen-xs-max){
@@ -222,9 +193,23 @@
     }
     .btn-donate{
       background-color: $color-light-blue-opacity;
-      bottom: 81px;
+    }
+  }
+  .home-page-background-caption{
+    background: $color-light-blue;
+    padding:0;
+    p{
+      color: $color-white;
+      @include font-size(3);
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: auto;
+      padding-top: 15px;
+      padding-bottom: 5px;
+      letter-spacing: 2.9px;
+      margin-left: 25px;
       @media (max-width: $screen-xs-max){
-        bottom: 50px;
+        @include font-size(1.4);
       }
     }
   }
