@@ -142,7 +142,7 @@ main.main{
           .initiative-button{
             position: absolute;
             bottom: 13px;
-            right: 40px;
+            right: 17px;
             -webkit-border-radius: 100%;
             -moz-border-radius: 100%;
             border-radius: 100%;
@@ -165,7 +165,7 @@ main.main{
             height: 129px;
           }
           @media (min-width: $screen-md-min){
-            height: 278px;
+            height: 220px;
           }
         }
       }
@@ -467,7 +467,7 @@ main.main{
       }
     }
     .entry-content{
-      
+
     }
     footer{
       background-color: $color-white;
@@ -490,7 +490,7 @@ main.main{
       .ngg-album-link{
         .Link{
           img{
-              width: 100%;
+            width: 100%;
           }
         }
       }
