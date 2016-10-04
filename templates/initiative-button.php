@@ -10,7 +10,7 @@
     <div class="container">
 
             <div class="initiative-buttons-inner-container clearfix">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 initiative-buttons-box content-live-healthy">
+                <div class="col-sm-4 col-xs-12 initiative-buttons-box content-live-healthy">
                     <div class="row">
                         <div class="initiative-buttons-content">
                             <?php
@@ -35,7 +35,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 initiative-buttons-box content-acp">
+                <div class="col-sm-4 col-xs-12 initiative-buttons-box content-acp">
                     <div class="row">
                         <div class="initiative-buttons-content">
                             <?php
@@ -60,7 +60,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 initiative-buttons-box content-gugo">
+                <div class="col-sm-4 col-xs-12 initiative-buttons-box content-gugo">
                     <div class="row">
                         <div class="initiative-buttons-content">
                             <?php
