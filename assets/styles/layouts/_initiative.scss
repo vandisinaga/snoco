@@ -34,7 +34,7 @@
       letter-spacing: 2.9px;
       margin-left: 25px;
       @media (max-width: $screen-xs-max){
-        @include font-size(1.4);
+        @include font-size(1.5);
       }
     }
   }
@@ -117,6 +117,11 @@
           top:0;
           left: 0;
         }
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+          top: -22px;
+          left: 2px;
+          width: 184px;
+        }
       }
     }
     .btn-donate{
@@ -137,7 +142,7 @@
       margin-left: 25px;
       letter-spacing: 2.9px;
       @media (max-width: $screen-xs-max){
-        @include font-size(1.4);
+        @include font-size(1.5);
       }
     }
   }
@@ -237,7 +242,7 @@
       letter-spacing: 2.9px;
       margin-left: 25px;
       @media (max-width: $screen-xs-max){
-        @include font-size(1.4);
+        @include font-size(1.5);
       }
     }
   }
@@ -342,35 +347,44 @@
   }
   
   .box-link-container{
-    margin-top: 59px;
+    margin-top: 85px;
+    position: relative;
+    &:before{
+      content:url('../images/join.png');
+      min-width: 51.63px;
+      min-height: 51.63px;
+      position: absolute;
+      top: -48px;
+      right: 32px;
+      @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+        top: -56px;
+        right: 0;
+      }
+      @media (max-width: $screen-sm-max){
+        display: none;
+      }
+    }
+    &:after{
+      content:url('../images/join-arrow.png');
+      min-width: 26px;
+      min-height: 51.63px;
+      position: absolute;
+      top: 7px;
+      right: -15px;
+      @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+        right: -40px;
+        top: 8px;
+      }
+      @media (max-width: $screen-sm-max){
+        display: none;
+      }
+    }
     .box-link-inner-container{
       &:nth-of-type(4){
         .box-menu-image{
-          position: relative;
           a{
             img{
-            }
-            &:before{
-              content:url('../images/join.png');
-              min-width: 51.63px;
-              min-height: 51.63px;
-              position: absolute;
-              top: -56px;
-              right: 0;
-              @media (max-width: $screen-sm-max){
-                display: none;
-              }
-            }
-            &:after{
-              content:url('../images/join-arrow.png');
-              min-width: 51.63px;
-              min-height: 51.63px;
-              position: absolute;
-              top: 0;
-              right: -56px;
-              @media (max-width: $screen-sm-max){
-                display: none;
-              }
+
             }
           }
         }

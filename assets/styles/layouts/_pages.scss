@@ -49,22 +49,19 @@ main.main{
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 340px;
+  min-height: 460px;
   overflow: hidden;
-  -moz-box-shadow: inset 0 0 150px #000000;
-  -webkit-box-shadow: inset 0 0 150px #000000;
-  box-shadow: inset 0 0 150px #000000;
   position: relative;
   .home-page-background-caption{
     top: 50%;
-    transform: translateY(5%);
-    padding: 0 23% 0 15%;
+    transform: translateY(10%);
+    padding: 0 15%;
     h1{
       @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
         @include font-size(3.5);
       }
       @media (min-width: $screen-md-min){
-        @include font-size(4.5);
+        @include font-size(5);
       }
       font-family: $Lulo-Clean-Outline-Bold;
       color: $color-white;
@@ -85,7 +82,7 @@ main.main{
         @include font-size(2);
       }
       @media (min-width: $screen-md-min){
-        font-size: 3rem;
+        font-size: 3.5rem;
       }
     }
   }
@@ -106,7 +103,7 @@ main.main{
 
     .initiative-buttons-box{
       .initiative-buttons-content{
-        margin: 30px 16px 30px 19px;
+        margin: 40px 16px 40px 19px;
         background-color: $color-light-grey4;
         @media (min-width: $screen-xs-max) and (max-width: $screen-sm-max){
           height: 232px;
@@ -131,7 +128,7 @@ main.main{
             img{
               top: 20%;
               margin: auto;
-              transform: translateY(13%);
+              transform: translateY(10%);
               @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
                 max-width: 116px;
                 margin: inherit;
@@ -141,7 +138,7 @@ main.main{
           }
           .initiative-button{
             position: absolute;
-            bottom: 13px;
+            bottom: 18px;
             right: 17px;
             -webkit-border-radius: 100%;
             -moz-border-radius: 100%;
@@ -204,7 +201,7 @@ main.main{
         .initiative-buttons-content-inner{
           a{
             img{
-              transform: translateY(0);
+              transform: translateY(-6%);
               @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
                 max-width: 100%;
                 margin: inherit;
@@ -301,9 +298,6 @@ main.main{
       margin: 10px 5px;
       img{
         margin: auto;
-        @media (min-width: $screen-lg-min){
-          width: 85%;
-        }
       }
       @media (max-width: $screen-xs-max){
         margin: 5px;
@@ -358,22 +352,28 @@ main.main{
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 340px 367px 0 0;
+  border-width: 460px 367px 0 0;
   border-color: $color-grey-opacity  transparent transparent transparent;
   img{
     position: absolute;
-    top: 36px;
-    left: 12px;
-    width: 157px;
+    top: 20px;
+    left: 16px;
+    width: 180px;
     @media (max-width: $screen-xs-max){
       position: absolute;
       top: 5px;
       width: 88px;
       left: 2px;
     }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+      width: 99px;
+    }
   }
   @media (max-width: $screen-xs-max){
     border-width: 114px 126px 0 0;
+  }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+    border-width: 248px 248px 0 0;
   }
 }
 
@@ -407,7 +407,7 @@ main.main{
             a {
               margin-right: 10px;
               line-height: 50px;
-              font-size: 2rem;
+              font-size: 1.8rem;
               font-weight: 600;
               color: $color-white;
               text-transform: uppercase;
@@ -415,7 +415,7 @@ main.main{
               &::after {
                 content: '/';
                 font-family: FontAwesome;
-                margin-left: 13px;
+                margin-left: 7px;
                 font-size: 22px;
                 vertical-align: top;
                 color: $color-dark-green;
@@ -424,13 +424,7 @@ main.main{
               &:focus {
                 text-decoration: none;
               }
-              @media (max-width: $screen-sm-min) {
-                margin-right: 6px;
-                font-size: 1.3rem;
-              }
-              @media (min-width: $screen-sm-min)and(max-width: $screen-sm-max) {
-                font-size: 98%;
-              }
+
             }
             &:nth-last-of-type(1) {
               a {
@@ -442,10 +436,14 @@ main.main{
             @media (max-width: $screen-xs-max){
               display: block;
               a{
+                @include font-size(1.2);
                 &::after {
                   display: none;
                 }
               }
+            }
+            @media (min-width: $screen-sm-min)and(max-width: $screen-sm-max) {
+              font-size: 97%;
             }
           }
         }
@@ -493,6 +491,10 @@ main.main{
             width: 100%;
           }
         }
+      }
+      &::before,
+      &::after{
+        display: none;
       }
     }
     h4{
