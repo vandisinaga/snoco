@@ -10,7 +10,7 @@
                         <span class="icon-bar "></span>
                     </button>
                     <div id="second-menu" class="collapse navbar-collapse">
-                        <?php wp_nav_menu('menu= Live Healthy 2020'); ?>
+                        <?php wp_nav_menu('menu=LiveHealthy2020'); ?>
                     </div><!--/.nav-collapse -->
                 </div>
                 <div class="clearfix"></div>

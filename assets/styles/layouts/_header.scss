@@ -72,9 +72,16 @@ header{
                     display: none;
                     list-style: none;
                     padding: 0;
-                    a{
-                      padding: 5px 20px;
-                      display: block;
+                    li{
+                      a{
+                        padding: 5px 20px;
+                        display: block;
+                      }
+                      &#menu-item-124{
+                        a{
+                          font-style: italic;
+                        }
+                      }
                     }
                   }
                 }
@@ -101,7 +108,7 @@ header{
                   .sub-menu{
                     margin-bottom: -1px;
                     padding:0;
-                    min-width: 361px;
+                    min-width: 390px;
                     display: none;
                     position: absolute;
                     background: $color-light-green-opacity2;
@@ -112,6 +119,11 @@ header{
                       display: block;
                       width: 100%;
                       text-align: left;
+                      &#menu-item-124{
+                        a{
+                          font-style: italic;
+                        }
+                      }
                       &:hover,
                       &:focus{
                         a{
@@ -145,6 +157,17 @@ header{
                         &:hover,
                         &:focus{
                           text-decoration: none;
+                        }
+                      }
+                    }
+                  }
+                  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                    &#menu-item-122{
+                      .sub-menu{
+                        li{
+                          a{
+                            padding: 0 0 0 3%;
+                          }
                         }
                       }
                     }

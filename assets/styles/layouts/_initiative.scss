@@ -36,6 +36,14 @@
       @media (max-width: $screen-xs-max){
         @include font-size(1.5);
       }
+      a{
+        color: $color-white;
+        &:hover,
+        &:focus{
+          //color: $color-orange;
+          text-decoration: underline;
+        }
+      }
     }
   }
   .second-menu-container{
@@ -144,6 +152,14 @@
       @media (max-width: $screen-xs-max){
         @include font-size(1.5);
       }
+      a{
+        color: $color-white;
+        &:hover,
+        &:focus{
+          text-decoration: underline;
+          //color: $color-grey-green;
+        }
+      }
     }
   }
   .second-menu-container{
@@ -210,9 +226,6 @@
 
 //LIVE HEALTHY
 .page-template-template-live-healty{
-  .outer-container-content{
-    padding: 35px 5px 0;
-  }
   .home-page-background{
     .border-triangle{
       img{
@@ -243,6 +256,14 @@
       margin-left: 25px;
       @media (max-width: $screen-xs-max){
         @include font-size(1.5);
+      }
+      a{
+        color: $color-white;
+        &:hover,
+        &:focus{
+          text-decoration: underline;
+          //color: $color-dark-blue1;
+        }
       }
     }
   }
@@ -349,36 +370,36 @@
   .box-link-container{
     margin-top: 85px;
     position: relative;
-    &:before{
-      content:url('../images/join.png');
-      min-width: 51.63px;
-      min-height: 51.63px;
-      position: absolute;
-      top: -48px;
-      right: 32px;
-      @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
-        top: -56px;
-        right: 0;
-      }
-      @media (max-width: $screen-sm-max){
-        display: none;
-      }
-    }
-    &:after{
-      content:url('../images/join-arrow.png');
-      min-width: 26px;
-      min-height: 51.63px;
-      position: absolute;
-      top: 7px;
-      right: -15px;
-      @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
-        right: -40px;
-        top: 8px;
-      }
-      @media (max-width: $screen-sm-max){
-        display: none;
-      }
-    }
+    //&:before{
+    //  content:url('../images/join.png');
+    //  min-width: 51.63px;
+    //  min-height: 51.63px;
+    //  position: absolute;
+    //  top: -48px;
+    //  right: 32px;
+    //  @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+    //    top: -56px;
+    //    right: 0;
+    //  }
+    //  @media (max-width: $screen-sm-max){
+    //    display: none;
+    //  }
+    //}
+    //&:after{
+    //  content:url('../images/join-arrow.png');
+    //  min-width: 26px;
+    //  min-height: 51.63px;
+    //  position: absolute;
+    //  top: 7px;
+    //  right: -15px;
+    //  @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+    //    right: -40px;
+    //    top: 8px;
+    //  }
+    //  @media (max-width: $screen-sm-max){
+    //    display: none;
+    //  }
+    //}
     .box-link-inner-container{
       &:nth-of-type(4){
         .box-menu-image{

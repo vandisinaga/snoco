@@ -21,38 +21,32 @@ $the_title = get_field('content_title');
 </div>
 <?php endwhile; ?>
 
-<div class="box-link-container">
-  <?php
-  $box_link = get_field('gugo_button_bottom','option');
-  if($box_link):
-    $i=0;
-    foreach($box_link as $list):
-      $image = $list['gugo_button_bottom_image'];
 
-      $image_source = '';
-      $image_title = '';
 
-      if(strlen($image['url']) > 0)
-      {
-        $image_source = $image['url'];
-        $image_title = $image['title'];
-      }
+<?php if( have_rows('gugo_button_bottom', 'option') ): ?>
+  <div class="box-link-container">
+    <?php while( have_rows('gugo_button_bottom', 'option') ): the_row();
 
-      $box_link_url = $list['gugo_button_bottom_url'];
+      // vars
+      $image = get_sub_field('gugo_button_bottom_image', 'option');
+      $link = get_sub_field('gugo_button_bottom_url', 'option');
+
       ?>
+
       <div class="col-sm-3 col-xs-6 box-link-inner-container">
         <div class="row">
           <div class="box-menu-image">
-            <a href="<?php echo $box_link_url ?>">
-              <img src="<?php echo $image_source ?>" alt="<?php echo $image_title ?>" class="img-responsive"/>
+            <a href="<?php echo $link ?>">
+              <img src="<?php echo $image['url'] ?>" alt="<?php echo $image['url'] ?>" class="img-responsive"/>
             </a>
           </div>
         </div>
       </div>
-    <?php endforeach; ?>
+    <?php endwhile; ?>
     <div class="clearfix"></div>
-  <?php endif; ?>
-</div>
+  </div>
+<?php endif; ?>
+
 
 
 

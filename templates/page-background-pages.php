@@ -27,7 +27,7 @@ else{
     </div>
     <div class="home-page-background-caption">
         <div class="container">
-            <p>Advance Care Planning</p>
+            <p><a href="/about-2">Advance Care Planning</a></p>
         </div>
     </div>
 
@@ -43,7 +43,7 @@ else{
     </div>
     <div class="home-page-background-caption">
         <div class="container">
-            <p>Gear Up and Go!</p>
+            <p><a href="/gear-up-go">Gear Up and Go!</a></p>
         </div>
     </div>
 <?php } elseif( is_page_template('template-live-healty.php' )) {?>
@@ -58,7 +58,7 @@ else{
     </div>
     <div class="home-page-background-caption">
         <div class="container">
-            <p>Live Healthy 2020</p>
+            <p><a href="/what-is-lh2020">Live Healthy 2020</a></p>
         </div>
     </div>
 <?php } else {?>
