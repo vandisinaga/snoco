@@ -51,15 +51,15 @@ $the_title = get_field('content_title');
     <?php if(strlen($poster_why_join_title) > 0): ?>
         <div class="live-healthy-poster-outer-container">
             <div class="live-healthy-poster-container">
-                <div class="poster-image">
+                <div class="col-sm-3 col-md-2 poster-image">
                     <img src="<?php echo $poster_why_join_image['url']?>" alt="<?php echo $poster_why_join_image['title']?>" class="img-responsive">
                 </div>
 
-                <div class="poster-description">
+                <div class="col-sm-9 col-md-10 poster-description">
                     <h1 class="title-banner"><?php echo $poster_why_join_title?></h1>
                     <?php echo $poster_why_join_list?>
                 </div>
-
+                <div class="clearfix"></div>
             </div>
             <div class="clearfix"></div>
         </div>

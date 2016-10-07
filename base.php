@@ -24,7 +24,7 @@ use Roots\Sage\Wrapper;
       <?php get_template_part('templates/front-page'); ?>
 
     <?php elseif(is_home()): ?>
-        <?php get_template_part('templates/page-background'); ?>
+        <?php get_template_part('templates/page-background-pages'); ?>
     <?php else: ?>
         <?php get_template_part('templates/page-background-pages'); ?>
         <?php global $post;?>

@@ -17,7 +17,7 @@ if(strlen($home_page_background['url']) > 0)
             <?php endif; ?>
         </div>
         <?php
-        $donate_us = get_field('donate_us');
+        $donate_us = get_field('donate_button_url', 'option');
         ?>
         <a href="<?php echo $donate_us ?>" class="btn btn-donate">Donate <span>Here</span></a>
         <div class="clearfix"></div>

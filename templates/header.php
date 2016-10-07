@@ -64,6 +64,9 @@
                 wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav top-menu ']);
               endif;
               ?>
+              <div class="mobile-search visible-xs">
+                <?php get_search_form(); ?>
+              </div>
             </div><!--/.nav-collapse -->
 
           </div>

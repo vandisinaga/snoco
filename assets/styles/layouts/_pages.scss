@@ -18,6 +18,9 @@ main.main{
         width: 274px;
         border: solid 1px $color-dark-grey;
         margin-right: -4px;
+        @media (max-width: $screen-xs-max){
+          width: 228px;
+        }
       }
     }
     button[type="submit"]{

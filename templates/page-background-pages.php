@@ -5,7 +5,7 @@ $home_page_background = get_field('home_page_background', 'option');
 $initiative_buttons_middle_image = get_field('initiative_buttons_middle_image', 'option');
 $initiative_buttons_right_image = get_field('initiative_buttons_right_image', 'option');
 $initiative_buttons_left_image = get_field('initiative_buttons_left_image', 'option');
-$donate_us = get_field('donate_us');
+$donate_us = get_field('donate_button_url', 'option');
 if(strlen($page_background['url']) > 0)
 {
     $style = "background-image: url('".$page_background['url']."');";
