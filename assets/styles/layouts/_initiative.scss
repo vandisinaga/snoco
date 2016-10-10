@@ -312,10 +312,7 @@
     margin: 28px 17.8px 28px 16px;
     .live-healthy-poster-container{
       .poster-image{
-        float: left;
-        margin-right: 25px;
         @media (max-width: $screen-xs-max){
-          float: none;
           img{
             margin: auto auto 15px;
           }
@@ -331,6 +328,9 @@
             color: $color-white;
             list-style-position: inside;
             font-size: 1.75rem;
+            @media (max-width: $screen-xs-max){
+              list-style-position: outside;
+            }
           }
         }
       }

@@ -6,14 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="15dadbc0-bc37-46f8-b191-0007dc363ded" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/layouts/_aboutpage.scss" afterPath="$PROJECT_DIR$/assets/styles/layouts/_aboutpage.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/layouts/_header.scss" afterPath="$PROJECT_DIR$/assets/styles/layouts/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/layouts/_pages.scss" afterPath="$PROJECT_DIR$/assets/styles/layouts/_pages.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/base.php" afterPath="$PROJECT_DIR$/base.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template-live-healty.php" afterPath="$PROJECT_DIR$/template-live-healty.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/header.php" afterPath="$PROJECT_DIR$/templates/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page-background-pages.php" afterPath="$PROJECT_DIR$/templates/page-background-pages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page-background.php" afterPath="$PROJECT_DIR$/templates/page-background.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/styles/layouts/_initiative.scss" afterPath="$PROJECT_DIR$/assets/styles/layouts/_initiative.scss" />
     </list>
     <ignored path="SnoCo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_initiative.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_initiative.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/styles/layouts/_initiative.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="193" column="12" selection-start-line="193" selection-start-column="12" selection-end-line="193" selection-end-column="12" />
+            <state relative-caret-position="274">
+              <caret line="312" column="35" selection-start-line="312" selection-start-column="35" selection-end-line="312" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -47,7 +40,7 @@
       <file leaf-file-name="_pages.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/styles/layouts/_pages.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
+            <state relative-caret-position="11577">
               <caret line="681" column="0" selection-start-line="681" selection-start-column="0" selection-end-line="707" selection-end-column="1" />
               <folding />
             </state>
@@ -84,7 +77,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/styles/layouts/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="687">
@@ -97,28 +90,9 @@
       <file leaf-file-name="page-background-pages.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/page-background-pages.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-391">
+            <state relative-caret-position="221">
               <caret line="13" column="60" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="60" />
-              <folding>
-                <marker date="1475835095388" expanded="true" signature="825:930" ph="..." />
-                <marker date="1475835095388" expanded="true" signature="863:930" ph="..." />
-                <marker date="1475835095388" expanded="true" signature="1048:1203" ph="..." />
-                <marker date="1475835095388" expanded="true" signature="1261:1383" ph="..." />
-                <marker date="1475835095388" expanded="true" signature="1293:1372" ph="..." />
-                <marker date="1475835095388" expanded="true" signature="1559:1663" ph="..." />
-                <marker date="1475835095388" expanded="true" signature="1597:1663" ph="..." />
-                <marker date="1475835095388" expanded="true" signature="1780:1935" ph="..." />
-                <marker date="1475835095388" expanded="true" signature="1993:2112" ph="..." />
-                <marker date="1475835095388" expanded="true" signature="2025:2101" ph="..." />
-                <marker date="1475835095388" expanded="true" signature="2248:2351" ph="..." />
-                <marker date="1475835095388" expanded="true" signature="2286:2351" ph="..." />
-                <marker date="1475835095388" expanded="true" signature="2467:2622" ph="..." />
-                <marker date="1475835095388" expanded="true" signature="2680:2805" ph="..." />
-                <marker date="1475835095388" expanded="true" signature="2712:2794" ph="..." />
-                <marker date="1475835095388" expanded="true" signature="2891:3054" ph="..." />
-                <marker date="1475835095388" expanded="true" signature="2923:3054" ph="..." />
-                <marker date="1475835095388" expanded="true" signature="2978:3054" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,7 +100,7 @@
       <file leaf-file-name="base.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="425">
               <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
               <folding>
                 <marker date="1475837598311" expanded="true" signature="248:439" ph="..." />
@@ -138,7 +112,7 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
+            <state relative-caret-position="1122">
               <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
               <folding />
             </state>
@@ -218,10 +192,10 @@
         <option value="$PROJECT_DIR$/templates/page-background.php" />
         <option value="$PROJECT_DIR$/templates/page-background-pages.php" />
         <option value="$PROJECT_DIR$/base.php" />
-        <option value="$PROJECT_DIR$/assets/styles/layouts/_initiative.scss" />
         <option value="$PROJECT_DIR$/assets/styles/layouts/_pages.scss" />
         <option value="$PROJECT_DIR$/templates/header.php" />
         <option value="$PROJECT_DIR$/assets/styles/layouts/_header.scss" />
+        <option value="$PROJECT_DIR$/assets/styles/layouts/_initiative.scss" />
       </list>
     </option>
   </component>
@@ -275,7 +249,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -364,7 +338,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -513,7 +487,8 @@
       <workItem from="1475638839449" duration="15809000" />
       <workItem from="1475724741947" duration="15907000" />
       <workItem from="1475754968214" duration="73000" />
-      <workItem from="1475821474772" duration="7248000" />
+      <workItem from="1475821474772" duration="7860000" />
+      <workItem from="1476072499456" duration="4669000" />
     </task>
     <task id="LOCAL-00001" summary="Update theme and homepage">
       <created>1472474610382</created>
@@ -676,11 +651,18 @@
       <option name="project" value="LOCAL" />
       <updated>1475755004389</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="task 25&#10;">
+      <created>1475840887870</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1475840887870</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="499733000" />
+    <option name="totallyTimeSpent" value="505014000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -696,9 +678,8 @@
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2170418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21918543" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -707,6 +688,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3263965" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -756,7 +738,8 @@
     <MESSAGE value="new design and social media setting on wp admin" />
     <MESSAGE value="task 16" />
     <MESSAGE value="task 22-24" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 22-24" />
+    <MESSAGE value="task 25&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 25&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -968,7 +951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
           <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -990,7 +972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,7 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,7 +986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="50" column="35" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1014,7 +993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1022,7 +1000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1147">
           <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,7 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,28 +1028,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/page-background-pages.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
+        <state relative-caret-position="221">
           <caret line="13" column="60" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="60" />
-          <folding>
-            <marker date="1475835095388" expanded="true" signature="825:930" ph="..." />
-            <marker date="1475835095388" expanded="true" signature="863:930" ph="..." />
-            <marker date="1475835095388" expanded="true" signature="1048:1203" ph="..." />
-            <marker date="1475835095388" expanded="true" signature="1261:1383" ph="..." />
-            <marker date="1475835095388" expanded="true" signature="1293:1372" ph="..." />
-            <marker date="1475835095388" expanded="true" signature="1559:1663" ph="..." />
-            <marker date="1475835095388" expanded="true" signature="1597:1663" ph="..." />
-            <marker date="1475835095388" expanded="true" signature="1780:1935" ph="..." />
-            <marker date="1475835095388" expanded="true" signature="1993:2112" ph="..." />
-            <marker date="1475835095388" expanded="true" signature="2025:2101" ph="..." />
-            <marker date="1475835095388" expanded="true" signature="2248:2351" ph="..." />
-            <marker date="1475835095388" expanded="true" signature="2286:2351" ph="..." />
-            <marker date="1475835095388" expanded="true" signature="2467:2622" ph="..." />
-            <marker date="1475835095388" expanded="true" signature="2680:2805" ph="..." />
-            <marker date="1475835095388" expanded="true" signature="2712:2794" ph="..." />
-            <marker date="1475835095388" expanded="true" signature="2891:3054" ph="..." />
-            <marker date="1475835095388" expanded="true" signature="2923:3054" ph="..." />
-            <marker date="1475835095388" expanded="true" signature="2978:3054" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1087,7 +1044,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="425">
           <caret line="26" column="64" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
           <folding>
             <marker date="1475837598311" expanded="true" signature="248:439" ph="..." />
@@ -1103,17 +1060,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/styles/layouts/_initiative.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="193" column="12" selection-start-line="193" selection-start-column="12" selection-end-line="193" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/styles/layouts/_pages.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
+        <state relative-caret-position="11577">
           <caret line="681" column="0" selection-start-line="681" selection-start-column="0" selection-end-line="707" selection-end-column="1" />
           <folding />
         </state>
@@ -1121,7 +1070,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
+        <state relative-caret-position="1122">
           <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
           <folding />
         </state>
@@ -1131,6 +1080,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="687">
           <caret line="226" column="17" selection-start-line="226" selection-start-column="17" selection-end-line="226" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/styles/layouts/_initiative.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="312" column="35" selection-start-line="312" selection-start-column="35" selection-end-line="312" selection-end-column="35" />
           <folding />
         </state>
       </provider>
