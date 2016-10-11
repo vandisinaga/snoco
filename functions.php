@@ -33,7 +33,6 @@ function ses_tinymce_css($wp) {
 }
 add_filter( 'mce_css', 'ses_tinymce_css' );
 
-
 function get_top_ancestor_id() {
 
     global $post;
@@ -62,7 +61,6 @@ function new_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
-
 //function the_excerpt_max_charlength($charlength) {
 //    $excerpt = get_the_excerpt();
 //    $charlength++;
@@ -87,4 +85,3 @@ add_filter( 'excerpt_more', 'new_excerpt_more' );
 //
 //    return $button .= "<p><i>Never submit passwords through Google Forms.</i></p>";
 //}
-

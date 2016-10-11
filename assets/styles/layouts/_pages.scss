@@ -313,7 +313,7 @@ main.main{
     }
   }
   @media (max-width: $screen-xs-max){
-    margin: 15px 15px 35px;
+    margin: 30px 15px 35px;
   }
 }
 //social-icon
@@ -406,6 +406,51 @@ main.main{
             padding: 0;
             margin: 0;
             display: inline-block;
+            @media (min-width: $screen-sm-min) {
+              &:hover,
+              &:focus {
+                .sub-menu{
+                  display: block;
+                }
+              }
+              .sub-menu{
+                margin-bottom: -1px;
+                padding:0;
+                min-width: 313px;
+                display: none;
+                position: absolute;
+                background: $color-light-green-opacity2;
+                z-index: 5;
+                list-style: none;
+                li{
+                  display: block;
+                  width: 100%;
+                  text-align: left;
+                  &#menu-item-124{
+                    a{
+                      font-style: italic;
+                    }
+                  }
+                  a{
+                    color: $color-white;
+                    padding: 10px;
+                    display: block;
+                    font-size: 1.5rem;
+                    text-transform: capitalize;
+                    line-height: 50px;
+                    padding: 0 0 0 7%;
+                    position: relative;
+                    @media (min-width: $screen-lg-min) {
+                      font-size: 2rem;
+                    }
+                    &:hover,
+                    &:focus{
+                      text-decoration: none;
+                    }
+                  }
+                }
+              }
+            }
 
             a {
               margin-right: 10px;
@@ -427,8 +472,8 @@ main.main{
               &:focus {
                 text-decoration: none;
               }
-
             }
+
             &:nth-last-of-type(1) {
               a {
                 &::after {
@@ -555,6 +600,9 @@ main.main{
 }
 
 //event calendar
+.ai1ec-main-container{
+  margin: 30px 0;
+}
 .simcal-calendar{
   border: solid 2px #d8d8d8;
   padding: 20px;

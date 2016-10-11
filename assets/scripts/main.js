@@ -44,7 +44,7 @@
             .click(function(){
               $(this).parent().find(".sub-menu").slideToggle();
             })
-            .prependTo(".menu-item-has-children");
+            .prependTo("#navbar-main-menu .menu-item-has-children");
       }
     },
     // Home page

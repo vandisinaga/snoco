@@ -60,6 +60,9 @@
                     color: $color-yellow;
                   }
                 }
+                .sub-menu{
+                  background-color: $color-orange;
+                }
                 }
               }
             }
@@ -309,7 +312,7 @@
   .live-healthy-poster-outer-container{
     background-color: $color-grey-blue;
     padding: 25px 19px;
-    margin: 28px 17.8px 28px 16px;
+    margin: 0px 17.8px 66px 16px;
     .live-healthy-poster-container{
       .poster-image{
         @media (max-width: $screen-xs-max){
@@ -368,42 +371,38 @@
   }
   
   .box-link-container{
-    margin-top: 85px;
     position: relative;
-    //&:before{
-    //  content:url('../images/join.png');
-    //  min-width: 51.63px;
-    //  min-height: 51.63px;
-    //  position: absolute;
-    //  top: -48px;
-    //  right: 32px;
-    //  @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
-    //    top: -56px;
-    //    right: 0;
-    //  }
-    //  @media (max-width: $screen-sm-max){
-    //    display: none;
-    //  }
-    //}
-    //&:after{
-    //  content:url('../images/join-arrow.png');
-    //  min-width: 26px;
-    //  min-height: 51.63px;
-    //  position: absolute;
-    //  top: 7px;
-    //  right: -15px;
-    //  @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
-    //    right: -40px;
-    //    top: 8px;
-    //  }
-    //  @media (max-width: $screen-sm-max){
-    //    display: none;
-    //  }
-    //}
     .box-link-inner-container{
-      &:nth-of-type(4){
+      &:nth-of-type(3){
         .box-menu-image{
           a{
+            &:before{
+              content:url('../images/join.png');
+              min-width: 51.63px;
+              min-height: 51.63px;
+              position: absolute;
+              top: -39px;
+              right: 32px;
+              @media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+                top: -56px;
+                right: 0;
+              }
+              @media (max-width: $screen-md-max){
+                display: none;
+              }
+            }
+            &:after{
+              content:url('../images/join-arrow.png');
+              min-width: 26px;
+              min-height: 51.63px;
+              position: absolute;
+              top: 7px;
+              right: -12px;
+
+              @media (max-width: $screen-md-max){
+                display: none;
+              }
+            }
             img{
 
             }
