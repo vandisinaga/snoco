@@ -97,12 +97,39 @@
     }
   }
   .gugo-table{
+    thead{
+      th{
+        h3{
+          font-size: 20px;
+        }
+      }
+    }
     tbody{
       td{
         padding-right: 20px;
         width: 50%;
         vertical-align: top;
-        line-height: 25px;
+        line-height: 35px;
+        @media (max-width: $screen-sm-max){
+          line-height: 30px;
+        }
+        @media (max-width: $screen-xs-max){
+          line-height: 17px;
+        }
+        ul{
+          padding-left: 3em;
+          @media (max-width: $screen-xs-max){
+            padding-left: 2em;
+          }
+          @media (max-width: $screen-xss-max){
+            padding-left: 0;
+          }
+          li{
+            list-style-position: inside;
+            text-indent: -2em;
+            font-size: 1.82rem;
+          }
+        }
       }
     }
   }
