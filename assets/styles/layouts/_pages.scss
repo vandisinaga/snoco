@@ -416,7 +416,9 @@ main.main{
               .sub-menu{
                 margin-bottom: -1px;
                 padding:0;
-                min-width: 313px;
+                min-width: 175px;
+                /*min-width: 313px;*/
+                margin-left: -20px;
                 display: none;
                 position: absolute;
                 background: $color-light-green-opacity2;
